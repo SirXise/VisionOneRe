@@ -41,7 +41,7 @@
 
 
 
-                <a class="card" href="{{ url('project') }}">
+                <a class="card" href="{{ url('project?section=inspect') }}">
                     <div class="card-image">
                         <img src="{{ url('build/img/service_img/inspection_storage_card.jpg') }}" alt="Inspection Image" class="card-image" style="object-fit: cover;">
                     </div>
@@ -57,7 +57,7 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a class="card" href="{{ url('project') }}">
+                <a class="card" href="{{ url('project?section=maintenance') }}">
                     <div class="card-image">
                         <img src="{{ url('build/img/service_img/maintenance_card.jpg') }}" alt="Maintenance Image" class="card-image" style="object-fit: cover;">
                     </div>
@@ -73,7 +73,7 @@
                 </a>
 
                 <!-- Card 3 -->
-                <a class="card" href="{{ url('project') }}">
+                <a class="card" href="{{ url('project?section=repair') }}">
                     <div class="card-image">
                         <img src="{{ url('build/img/service_img/repair_card.jpg') }}" alt="Repair Image" class="card-image" style="object-fit: cover;">
                     </div>
@@ -89,7 +89,7 @@
                 </a>
 
                 <!-- Card 4 -->
-                <a class="card" href="{{ url('project') }}">
+                <a class="card" href="{{ url('project?section=special') }}">
                     <div class="card-image">
                         <img src="{{ url('build/img/service_img/special_project_card.jpg') }}" alt="Special Project Image" class="card-image" style="object-fit: cover;">
                     </div>

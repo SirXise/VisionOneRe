@@ -115,6 +115,9 @@
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        var sidebarLinks = document.querySelectorAll('.sidebar-nav li');
+        var titleElement = document.querySelector('.foreground-text');
+        var backElement = document.querySelector('.background-text');
         const timelineWrapper = document.getElementById('timeline-wrapper');
         const viewMoreButton = document.getElementById('view-more');
         const maintenanceSidebarItem = document.querySelector('#maintenance-link');
@@ -133,43 +136,6 @@
         let currentData = [];
         let rowCount = 0;
         let elementsPerSubArray = getElementsPerSubArray(); // Initialize with the correct value
-
-        function handleUrlFragment() {
-            const fragment = window.location.hash.substring(1); // Get URL fragment without '#'
-
-            if (fragment === 'maintenance-link') {
-                handleSidebarClick('maintenance-link', dataMaintenance);
-            } else if (fragment === 'inspect-link') {
-                handleSidebarClick('inspect-link', dataInspect);
-            } else if (fragment === 'repair-link') {
-                handleSidebarClick('repair-link', dataRepair);
-            } else if (fragment === 'special-link') {
-                handleSidebarClick('special-link', dataSpecial);
-            }
-        }
-
-        // Add click event listeners to sidebar links
-        sidebarLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                sidebarLinks.forEach(function(item) {
-                    item.classList.remove('active');
-                });
-                this.classList.add('active');
-                handleSidebarClick(this.id, {
-                    'maintenance-link': dataMaintenance,
-                    'inspect-link': dataInspect,
-                    'repair-link': dataRepair,
-                    'special-link': dataSpecial
-                } [this.id]);
-            });
-        });
-
-        // Handle URL fragment on page load
-        handleUrlFragment();
-
-        // Handle URL fragment changes (if URL changes without page reload)
-        window.addEventListener('hashchange', handleUrlFragment);
 
         const dataInspect = listToMatrix([{
                 id: 1,
@@ -448,11 +414,82 @@
             }
         ], elementsPerSubArray);
 
-        const dataRepair = listToMatrix([{}, ], elementsPerSubArray);
+        const dataRepair = listToMatrix([{
+                id: 1,
+                image: "{{ url('build/img/project_img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "//Petrovietnam Technical Services Corporation (PTSC) Malaysia",
+                year: "2015",
+                desc: "Rental for 6 months storage yard at Balok Kuantan cw relevant facilities & maintenance services"
+            },
+            {
+                id: 2,
+                image: "{{ url('build/img/project_img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "//Petrovietnam Technical Services Corporation (PTSC) Malaysia",
+                year: "2015",
+                desc: "Rental for 6 months storage yard at Balok Kuantan cw relevant facilities & maintenance services"
+            }
+        ], elementsPerSubArray);
 
-        const dataSpecial = listToMatrix([{}, ], elementsPerSubArray);
+        const dataSpecial = listToMatrix([{
+                id: 1,
+                image: "{{ url('build/img/project_img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "//Petrovietnam Technical Services Corporation (PTSC) Malaysia",
+                year: "2015",
+                desc: "Rental for 6 months storage yard at Balok Kuantan cw relevant facilities & maintenance services"
+            },
+            {
+                id: 2,
+                image: "{{ url('build/img/project_img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "//Petrovietnam Technical Services Corporation (PTSC) Malaysia",
+                year: "2015",
+                desc: "Rental for 6 months storage yard at Balok Kuantan cw relevant facilities & maintenance services"
+            }
+        ], elementsPerSubArray);
+
+        currentData = listToMatrix(dataInspect.flat(), elementsPerSubArray);
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function handleQueryParams() {
+            const section = getQueryParam('section');
+
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+
+            if (section === 'maintenance') {
+                currentData = listToMatrix(dataMaintenance.flat(), elementsPerSubArray);
+                sidebarLinks[1].classList.add('active');
+                titleElement.textContent = 'Maintenance';
+                backElement.textContent = 'Maintenance';
+            } else if (section === 'inspect') {
+                currentData = listToMatrix(dataInspect.flat(), elementsPerSubArray);
+                sidebarLinks[0].classList.add('active');
+                titleElement.textContent = 'Integrity Inspection';
+                backElement.textContent = 'Integrity Inspection';
+            } else if (section === 'repair') {
+                currentData = listToMatrix(dataRepair.flat(), elementsPerSubArray);
+                sidebarLinks[2].classList.add('active');
+                titleElement.textContent = 'Repair';
+                backElement.textContent = 'Repair';
+            } else if (section === 'special') {
+                currentData = listToMatrix(dataSpecial.flat(), elementsPerSubArray);
+                sidebarLinks[3].classList.add('active');
+                titleElement.textContent = 'Special Project';
+                backElement.textContent = 'Special Project';
+            } else {
+                currentData = listToMatrix(dataInspect.flat(), elementsPerSubArray);
+                sidebarLinks[0].classList.add('active');
+                titleElement.textContent = 'Integrity Inspection';
+                backElement.textContent = 'Integrity Inspection';
+            }
+        }
+
+        handleQueryParams();
 
         function renderTimeline(data, page = 1) {
+            console.log(data);
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const itemsToRender = data.flat().slice(start, end);
@@ -556,7 +593,6 @@
             renderTimeline(currentData); // Re-render the items
         });
 
-        currentData = dataInspect;
         renderTimeline(currentData);
 
         viewMoreButton.addEventListener('click', function() {

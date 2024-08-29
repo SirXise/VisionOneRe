@@ -90,19 +90,19 @@
 <section class="button-container">
     <div class="button-wrapper">
 
-        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/inspection_icon.png') }}" data-href="{{ url('project') }}">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/inspection_icon.png') }}" data-href="{{ url('project?section=inspect') }}">
             <img src="{{ url('build/img/index_img/icon/Inspection_button.png') }}" alt="Inspection Icon">
             <span>Inspection</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/maintenance_icon.png') }}" data-href="{{ url('project') }}">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/maintenance_icon.png') }}" data-href="{{ url('project?section=maintenance') }}">
             <img src="{{ url('build/img/index_img/icon/maintenance_button.png') }}" alt="Maintenance Icon">
             <span>Maintenance</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/repair_icon.png') }}" data-href="{{ url('project') }}">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/repair_icon.png') }}" data-href="{{ url('project?section=repair') }}">
             <img src="{{ url('build/img/index_img/icon/repair_button.png') }}" alt="Repair Icon">
             <span>Repair</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/project_icon.png') }}" data-href="{{ url('project') }}">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/project_icon.png') }}" data-href="{{ url('project?section=special') }}">
             <img src="{{ url('build/img/index_img/icon/special_project.png') }}" alt="Special Project Icon">
             <span>Special Project</span>
         </button>
