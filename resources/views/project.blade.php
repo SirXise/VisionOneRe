@@ -56,12 +56,12 @@
 
         <!-- Main Content Start -->
         <div class="main-content" style="flex: 3;">
-            <div class="text-center py-5">  
-            <div class="title-offset">
-                <span class="background-text">Integrity Inspection</span>
-                <h2 class="foreground-text">Integrity Inspection</h2>
-            </div>
-        
+            <div class="text-center py-5">
+                <div class="title-offset">
+                    <span class="background-text">Integrity Inspection</span>
+                    <h2 class="foreground-text">Integrity Inspection</h2>
+                </div>
+
             </div>
             <div id="app">
                 <div>
@@ -124,15 +124,52 @@
 
         let currentPage = 1;
         if (window.matchMedia('(min-width: 1440px)').matches) {
-                itemsPerPage = 9; // lg screen
-            } else if (window.matchMedia('(min-width: 768px)').matches) {
-                itemsPerPage = 8; // md screen
-            } else {
-                itemsPerPage = 9; // sm screen
-            }
+            itemsPerPage = 9; // lg screen
+        } else if (window.matchMedia('(min-width: 768px)').matches) {
+            itemsPerPage = 8; // md screen
+        } else {
+            itemsPerPage = 9; // sm screen
+        }
         let currentData = [];
         let rowCount = 0;
         let elementsPerSubArray = getElementsPerSubArray(); // Initialize with the correct value
+
+        function handleUrlFragment() {
+            const fragment = window.location.hash.substring(1); // Get URL fragment without '#'
+
+            if (fragment === 'maintenance-link') {
+                handleSidebarClick('maintenance-link', dataMaintenance);
+            } else if (fragment === 'inspect-link') {
+                handleSidebarClick('inspect-link', dataInspect);
+            } else if (fragment === 'repair-link') {
+                handleSidebarClick('repair-link', dataRepair);
+            } else if (fragment === 'special-link') {
+                handleSidebarClick('special-link', dataSpecial);
+            }
+        }
+
+        // Add click event listeners to sidebar links
+        sidebarLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                sidebarLinks.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                handleSidebarClick(this.id, {
+                    'maintenance-link': dataMaintenance,
+                    'inspect-link': dataInspect,
+                    'repair-link': dataRepair,
+                    'special-link': dataSpecial
+                } [this.id]);
+            });
+        });
+
+        // Handle URL fragment on page load
+        handleUrlFragment();
+
+        // Handle URL fragment changes (if URL changes without page reload)
+        window.addEventListener('hashchange', handleUrlFragment);
 
         const dataInspect = listToMatrix([{
                 id: 1,
@@ -411,32 +448,14 @@
             }
         ], elementsPerSubArray);
 
-        const dataRepair = listToMatrix([{
-                id: 1,
-                image: "{{ url('build/img/Collaborators/SGS-NORMAL.jpg') }}",
-                name: "SGS Normal Sdn Bhd",
-                year: "2015",
-                desc: "Piping Inspection - 8\" Pipe"
-            },
-        ], elementsPerSubArray);
+        const dataRepair = listToMatrix([{}, ], elementsPerSubArray);
 
-        const dataSpecial = listToMatrix([{
-                id: 1,
-                image: "{{ url('build/img/Collaborators/SGS-NORMAL.jpg') }}",
-                name: "SGS Normal Sdn Bhd",
-                year: "2015",
-                desc: "Piping Inspection - 8\" Pipe"
-            },
-        ], elementsPerSubArray);
-
-        console.log('Data matrix:', dataInspect);
+        const dataSpecial = listToMatrix([{}, ], elementsPerSubArray);
 
         function renderTimeline(data, page = 1) {
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const itemsToRender = data.flat().slice(start, end);
-
-            console.log('Rendering timeline with items:', itemsToRender); // Debugging line
 
             let rowCount = document.querySelectorAll('.timeline').length; // Start counting from existing timelines
 
@@ -583,7 +602,6 @@
                 }
                 matrix[k].push(list[i]);
             }
-            console.log('Matrix created:', matrix);
             return matrix;
         }
     });
