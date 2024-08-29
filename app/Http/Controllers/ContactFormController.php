@@ -32,7 +32,7 @@ class ContactFormController extends Controller
                 "Subject: {$data['subject']}\n" .
                 "Message:\n{$data['message']}",
                 function($message) use ($data) {
-                    $message->to('testtester123234@gmail.com')  // Replace with your email
+                    $message->to('faiz@visionone.com.my')  // Replace with your email
                             ->subject('Contact Form Message');
                     $message->from($data['email'], $data['name']);
                 }
