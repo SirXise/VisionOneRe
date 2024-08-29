@@ -1,0 +1,325 @@
+/* Base Styles - Mobile First Approach */
+.full-page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact-box-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: saturate(180%) blur(30px);
+    border-radius: 10px;
+    padding: 40px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.contact .heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.contact .heading h2 span {
+    color: #06768D;
+}
+
+.contact .heading p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #252525;
+    margin: 20px 0 40px;
+    padding: 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-form {
+    height: fit-content;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form .form-floating {
+    position: relative;
+}
+
+.contact-form .form-control {
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background: #d8f0f5 !important;
+    border: 1px solid transparent !important;
+    border-radius: 10px;
+}
+
+.contact-form button.btn {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #06768D;
+    color: #ffffff;
+    width: 100% !important;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.contact-info .title h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.contact-info .title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #252525;
+    line-height: 1.6;
+}
+
+.info-reach h4 {
+    margin-bottom: 60px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 30px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info .info {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    background: transparent !important;
+}
+
+.contact-info .info i {
+    font-size: 40px;
+    color: #06768D;
+    margin-right: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.contact-info .info h4 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 60px;
+}
+
+.contact-info .info h4 span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #252525;
+}
+
+/* Location Section Styles */
+.map-container-contact {
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-container-contact iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive Design for 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .map-container-contact {
+        height: 300px;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact-box-container {
+        padding: 20px;
+    }
+
+    .contact .heading h2 {
+        font-size: 28px;
+    }
+
+    .contact .heading p {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center horizontally */
+        justify-content: center;
+        /* Center vertically if needed */
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 30px;
+        /* Gap between columns */
+        justify-content: center;
+        /* Center horizontally within flex container */
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1;
+        /* Equal width columns */
+        max-width: 500px;
+        /* Set a max-width to control column size */
+    }
+
+    .info {
+        display: flex;
+        align-items: flex-start;
+        /* Align items at the top */
+        padding: 15px;
+        border-radius: 5px;
+        position: relative;
+        background: transparent !important;
+    }
+
+    .info i {
+        font-size: 40px;
+        /* Icon size */
+        color: #06768D;
+        margin-right: 15px;
+        position: absolute;
+        /* Position icon */
+        top: 15px;
+        left: 15px;
+    }
+
+    .info h4 {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+        padding-left: 60px;
+        /* Avoid overlap with icon */
+    }
+
+    .info h4 span {
+        font-size: 18px;
+        font-weight: 400;
+        color: #252525;
+    }
+
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        /* Stack columns on smaller screens */
+    }
+
+    .contact-form {
+        margin-bottom: 20px;
+        /* Spacing between form and contact info on mobile */
+    }
+
+    .info-reach h4 {
+        margin-bottom: 0px;
+    }
+
+    .map-container-contact {
+        height: 300px;
+        /* Map height on small screens */
+    }
+
+    .contact {
+        padding: 40px 20px;
+        /* Reduce padding on mobile */
+    }
+
+    .contact-box-container {
+        padding: 20px;
+        /* Reduce padding on mobile */
+    }
+
+    .contact .heading h2 {
+        font-size: 28px;
+        /* Reduce heading size on mobile */
+    }
+
+    .contact .heading p {
+        font-size: 16px;
+        /* Reduce text size on mobile */
+    }
+
+    .flex-container {
+        flex-direction: column;
+        /* Stack the left and right columns */
+        gap: 20px;
+        /* Adjust gap between stacked columns */
+    }
+
+    .info i {
+        font-size: 30px;
+        /* Adjust icon size for smaller screens */
+        top: 10px;
+        left: 10px;
+    }
+
+    .info h4 {
+        padding-left: 50px;
+        /* Adjust padding to avoid overlap with smaller icons */
+    }
+}

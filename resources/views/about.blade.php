@@ -8,14 +8,14 @@
 
 @section('body')
 <div class="hero">
-    <img src="{{ url('build/img/about/laut2.jpg') }}" alt="Service Background Image" class="back-image">
+    <img src="{{ url('build/img/about_img/ocean_hero.png') }}" alt="Service Background Image" class="back-image">
     <div class="overlay-gradient"></div>
     <div class="text-overlay">
         <h2><span class="highlight">Empowering</span> Your Industry Journey</h2>
         <p>Join us on a journey to revolutionize the energy sector through our commitment to cutting-edge solutions, environmental stewardship, and unwavering dedication to excellence.</p>
     </div>
     <div class="oil-rig-wrapper2">
-        <img src="{{ url('build/img/about/oil rig legend.png') }}" alt="Oil Platform" class="oil-rig-image2">
+        <img src="{{ url('build/img/about_img/oil_platform.png') }}" alt="Oil Platform" class="oil-rig-image2">
     </div>
     <!-- <div class="oil-rig-wrapper">
     <img src="{{ url('assets/build/img/about/oil platform no bg.png') }}" alt="Oil Platform" class="oil-rig-image">
@@ -26,7 +26,7 @@
     <div class="grid-container">
         <div class="image-container">
             <video autoplay loop muted plays-inline class="back-video">
-                <source src="{{ url('build/video/OurStoryVid.mp4') }}" type="video/mp4">
+                <source src="{{ url('build/img/about_img/about_video.mp4') }}" type="video/mp4">
             </video>
             <div class="offsetbox"></div>
         </div>
@@ -42,37 +42,37 @@
             <div class="items-grid">
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/endorsed.png') }}" alt="Icon 1">
+                        <img src="{{ url('build/img/about_img/icon/endorsed.png') }}" alt="Icon 1">
                     </div>
                     <div class="item-text">Endorsed by esteemed national and international bodies.</div>
                 </div>
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/collaboration.png') }}" alt="Icon 2">
+                        <img src="{{ url('build/img/about_img/icon/collaboration.png') }}" alt="Icon 2">
                     </div>
                     <div class="item-text">Strategic collaborations with affiliated firms.</div>
                 </div>
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/efficiency.png') }}" alt="Icon 3">
+                        <img src="{{ url('build/img/about_img/icon/efficiency.png') }}" alt="Icon 3">
                     </div>
                     <div class="item-text">Executing projects with the highest level of safety and efficiency.</div>
                 </div>
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/certified.png') }}" alt="Icon 4">
+                        <img src="{{ url('build/img/about_img/icon/certified.png') }}" alt="Icon 4">
                     </div>
                     <div class="item-text">Team comprises seasoned experts certified in their respective fields.</div>
                 </div>
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/benchmark.png') }}" alt="Icon 5">
+                        <img src="{{ url('build/img/about_img/icon/benchmark.png') }}" alt="Icon 5">
                     </div>
                     <div class="item-text">Surpassing client expectations and setting new benchmarks in service excellence.</div>
                 </div>
                 <div class="grid-item">
                     <div class="item-icon">
-                        <img src="{{ url('build/img/about/icon/safety.png') }}" alt="Icon 6">
+                        <img src="{{ url('build/img/about_img/icon/safety.png') }}" alt="Icon 6">
                     </div>
                     <div class="item-text">Prioritizing safety protocols at every stage.</div>
                 </div>
@@ -96,7 +96,7 @@
             <div class="vision-content">
                 <div class="vision-item">
                     <div class="icon-title-container">
-                        <img src="{{ url('build/img/about/icon/vision.png') }}" alt="vision" class="title-icon">
+                        <img src="{{ url('build/img/about_img/icon/vision.png') }}" alt="vision" class="title-icon">
                         <div class="title-offset">
                             <span class="background-text">Vision</span>
                             <h2 class="foreground-text">Vision</h2>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="vision-item">
                     <div class="icon-title-container">
-                        <img src="{{ url('build/img/about/icon/mission.png') }}" alt="vision" class="title-icon">
+                        <img src="{{ url('build/img/about_img/icon/mission.png') }}" alt="vision" class="title-icon">
                         <div class="title-offset">
                             <span class="background-text">Mission</span>
                             <h2 class="foreground-text">Mission</h2>
@@ -118,7 +118,7 @@
 
         </div>
         <div class="image-container">
-        <img src="{{ url('build/img/about/gempak.png') }}" alt="vision" class="title-icon">
+        <img src="{{ url('build/img/about_img/ethos.png') }}" alt="vision" class="title-icon">
         </div>
     </div>
 </section>
@@ -134,37 +134,37 @@
 
     <div class="certifications-container">
     <div class="certification-card">
-            <img src="{{ url('build/img/about/PETRONASLogo.png') }}" alt="Petronas" class="certification-image">
+            <img src="{{ url('build/img/about_img/PETRONASLogo.png') }}" alt="Petronas" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title">Petronas Standardized Work & Equipment Categories (SWEC)</h3>
             </div>
         </div>
         <div class="certification-card">
-            <img src="{{ url('build/img/about/MOF.png') }}" alt="MOF" class="certification-image">
+            <img src="{{ url('build/img/about_img/MOF_Final.png') }}" alt="MOF" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title">Ministry of Finance (MoF)</h3>
             </div>
         </div>
         <div class="certification-card">
-            <img src="{{ url('build/img/about/CIDB.png') }}" alt="AELB" class="certification-image">
+            <img src="{{ url('build/img/about_img/CIDB.png') }}" alt="AELB" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title" style="margin-top: 60px;">CIDB (G7)</h3>
             </div>
         </div>
         <div class="certification-card">
-            <img src="{{ url('build/img/about/ISO9001.png') }}" alt="ISO" class="certification-image">
+            <img src="{{ url('build/img/about_img/ISO9001.png') }}" alt="ISO" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title">ISO 9001:2015 Quality Management System (QMS)</h3>
             </div>
         </div>
         <div class="certification-card">
-            <img src="{{ url('build/img/about/iso.jpeg') }}" alt="ISO" class="certification-image">
+            <img src="{{ url('build/img/about_img/iso.jpeg') }}" alt="ISO" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title">ISO 45001:2018 Occupational Health and Safety Management System (OH&S)</h3>
             </div>
         </div>
         <div class="certification-card">
-            <img src="{{ url('build/img/about/aelb.png') }}" alt="AELB" class="certification-image">
+            <img src="{{ url('build/img/about_img/aelb.png') }}" alt="AELB" class="certification-image">
             <div class="certification-info">
                 <h3 class="certification-title">Atomic Energy Licencing Board (AELB)</h3>
             </div>

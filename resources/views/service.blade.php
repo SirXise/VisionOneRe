@@ -10,7 +10,7 @@
 @section('body')
 
 <div class="hero">
-    <img src="{{ url('build/img/serviceBGLatest2.jpg') }}" alt="Service Background Image" class="back-image">
+    <img src="{{ url('build/img/service_img/service_hero.jpg') }}" alt="Service Background Image" class="back-image">
     <div class="overlay-gradient"></div>
     <div class="text-overlay2">
         <h2>Unleashing <span class="highlight">Excellence</span> <br>in Every Service</h2>
@@ -41,9 +41,9 @@
 
 
 
-                <a class="card" href="{{ url('projectinspect') }}">
+                <a class="card" href="{{ url('project') }}">
                     <div class="card-image">
-                        <img src="{{ url('build/img/services/inspection.jpg') }}" alt="Inspection Image" class="card-image" style="object-fit: cover;">
+                        <img src="{{ url('build/img/service_img/inspection_storage_card.jpg') }}" alt="Inspection Image" class="card-image" style="object-fit: cover;">
                     </div>
                     <img src="{{ url('build/icon/inspection_icon.png') }}" class="card-icon" alt="Inspection Icon" width="40" height="40">
                     <div class="text-container">
@@ -57,9 +57,9 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a class="card" href="{{ url('projectinspect') }}">
+                <a class="card" href="{{ url('project') }}">
                     <div class="card-image">
-                        <img src="{{ url('build/img/services/maintenance.jpg') }}" alt="Maintenance Image" class="card-image" style="object-fit: cover;">
+                        <img src="{{ url('build/img/service_img/maintenance_card.jpg') }}" alt="Maintenance Image" class="card-image" style="object-fit: cover;">
                     </div>
                     <img src="{{ url('build/icon/maintenance_icon.png') }}" class="card-icon" alt="Maintenance Icon" width="40" height="40">
                     <div class="text-container">
@@ -73,9 +73,9 @@
                 </a>
 
                 <!-- Card 3 -->
-                <a class="card" href="{{ url('projectinspect') }}">
+                <a class="card" href="{{ url('project') }}">
                     <div class="card-image">
-                        <img src="{{ url('build/img/services/repair.jpg') }}" alt="Repair Image" class="card-image" style="object-fit: cover;">
+                        <img src="{{ url('build/img/service_img/repair_card.jpg') }}" alt="Repair Image" class="card-image" style="object-fit: cover;">
                     </div>
                     <img src="{{ url('build/icon/repair_icon.png') }}" class="card-icon" alt="Repair Icon" width="40" height="40">
                     <div class="text-container">
@@ -89,9 +89,9 @@
                 </a>
 
                 <!-- Card 4 -->
-                <a class="card" href="{{ url('projectinspect') }}">
+                <a class="card" href="{{ url('project') }}">
                     <div class="card-image">
-                        <img src="{{ url('build/img/services/project.jpg') }}" alt="Special Project Image" class="card-image" style="object-fit: cover;">
+                        <img src="{{ url('build/img/service_img/special_project_card.jpg') }}" alt="Special Project Image" class="card-image" style="object-fit: cover;">
                     </div>
                     <!-- <div class="card-icons-container">
                 <img src="{{ url('assets/build/icon/DYNASEGMENT logo.png') }}" class="card-icon-top" alt="Special Project Icon">
@@ -127,7 +127,7 @@
     <section class="inspection-container">
         <div class="ndt-card-first">
             <video class="ndt-background-video" autoplay muted loop>
-                <source src="{{ url('build/img/services/NDT Service Vid.mp4') }}" type="video/mp4">
+                <source src="{{ url('build/img/service_img/NDT_video.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="ndt-card-image-first">
@@ -145,7 +145,7 @@
 
         <div class="ndt-card" onclick="scrollToTop(this); toggleActiveTop(this);" data-target="conventional-list">
             <div class="ndt-card-image">
-                <img src="{{ url('build/img/services/Conventional NDT Services Head.jpg') }}" alt="Service Background Image">
+                <img src="{{ url('build/img/service_img/conventional_NDT.jpg') }}" alt="Service Background Image">
             </div>
             <div class="ndt-card-content">
                 <h2 class="ndt-card-title">Conventional NDT Services</h2>
@@ -155,7 +155,7 @@
         </div>
         <div class="ndt-card" onclick="scrollToTop(this); toggleActiveTop(this);" data-target="advanced-list">
             <div class="ndt-card-image">
-                <img src="{{ url('build/img/services/Advanced NDT Services Head updated.jpg') }}" alt="Service Background Image">
+                <img src="{{ url('build/img/service_img/advanced_NDT.jpg') }}" alt="Service Background Image">
             </div>
             <div class="ndt-card-content">
                 <h2 class="ndt-card-title">Advanced NDT Services</h2>
@@ -167,143 +167,12 @@
     </section>
 
     <section class="service-list">
-
-
-        <!-- <div id="conventional-list" class="content-list">
-            <div class="grid-container1">
-                <div class="grid-item item1">
-                    <img src="{{ url('assets/build/img/services/Conventional NDT Services updated.jpg') }}" alt="Service Background Image">
-                </div>
-                <div class="grid-item item2">
-                    <ol class="ol-cards alternate" style="margin-left: 0;">
-                        <li style="--ol-cards-color-accent:#06768D">
-                            <div class="step"><i class="fas fa-x-ray"></i></div> 
-                            <div class="title">Radiography Testing</div>
-                            <div class="content">Radiographic Testing (RT) is a non-destructive testing (NDT) technique that employs x-rays or gamma rays to inspect the internal structure of manufactured parts, allowing for the detection of any flaws or defects.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#2189A6">
-                            <div class="step"><i class="fas fa-bezier-curve"></i></div> 
-                            <div class="title">Ultrasonic Testing</div>
-                            <div class="content">Ultrasonic Testing (UT) encompasses a range of non-destructive testing (NDT) methods that employ high-frequency sound waves to traverse an object or material. This technique facilitates the characterization of material properties and the detection of any imperfections or flaws.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#409AB4">
-                            <div class="step"><i class="fas fa-cogs"></i></div> 
-                            <div class="title">Magnetic Particle Testing</div>
-                            <div class="content">Magnetic Particle Inspection (MPI) is a non-destructive testing method that utilizes a magnetic field to identify surface and near-surface discontinuities in ferromagnetic materials.</div>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-
-            <div class="grid-container2">
-                <div class="grid-item item3">
-                    <ol class="ol-cards alternate" style="margin-left: 0;">
-                        <li style="--ol-cards-color-accent:#5AACBF">
-                            <div class="step"><i class="fas fa-tint"></i></div> 
-                            <div class="title">Dye/Liquid Penetrant Testing</div>
-                            <div class="content">Dye Penetrant Inspection (DPI), also referred to as Liquid Penetrant Inspection (LPI), is a prevalent non-destructive testing technique employed to reveal surface-breaking flaws. This cost-effective method is adept at detecting a variety of surface discontinuities, including cracks, porosity, laps, seams, and other imperfections.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#72BECB">
-                            <div class="step"><i class="fas fa-eye"></i></div>
-                            <div class="title">Visual Inspection</div>
-                            <div class="content">Visual Testing (VT) relies on the direct observation of flaws visible to the naked eye and is the most widely employed non-destructive testing (NDT) method across various industries. It provides a practical and rapid means of quality control throughout every stage of the fabrication or maintenance process.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#8BD0D6">
-                            <div class="step"><i class="fas fa-cogs"></i></div>
-                            <div class="title">Eddy Current Testing</div>
-                            <div class="content">Eddy Current Testing is a non-destructive testing (NDT) technique employed for various applications, including the detection of flaws, measurement of material and coating thickness, identification of materials, and assessment of heat treatment conditions in certain substances.</div>
-                        </li>
-                    </ol>
-
-                </div>
-                <div class="grid-item item4">
-                    <img src="{{ url('assets/build/img/services/Conventional NDT Services 2 updated.jpg') }}" alt="Service Background Image">
-                </div>
-            </div>
-        </div>
-
-        <div id="advanced-list" class="content-list">
-            <div class="grid-container1">
-                <div class="grid-item item1">
-                    <img src="{{ url('assets/build/img/services/Advanced NDT Services updated.jpg') }}" alt="Service Background Image">
-                </div>
-                <div class="grid-item item2">
-                    <ol class="ol-cards alternate" style="margin-left: 0;">
-                        <li style="--ol-cards-color-accent:#8BD0D6">
-                            <div class="step"><i class="fas fa-paint-roller"></i></div> 
-                            <div class="title">Coating Inspection</div>
-                            <div class="content">Eddy Current Testing is a non-destructive testing (NDT) technique employed for various applications, including the detection of flaws, measurement of material and coating thickness, identification of materials, and assessment of heat treatment conditions in certain substances.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#72BECB">
-                            <div class="step"><i class="fas fa-x-ray"></i></div> 
-                            <div class="title">Computerized Radiography Testing</div>
-                            <div class="content">In Computed Radiography, imaging plates exposed to X-rays or gamma rays retain the incoming radiation energy within a distinctive phosphor layer. This latent image is subsequently revealed by a specialized device, known as a scanner, which employs a precisely focused laser beam to stimulate and read the stored image from the plate.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#5AACBF">
-                            <div class="step"><i class="fas fa-chart-line"></i></div> 
-                            <div class="title">Corrosion Monitoring – C-Scan and B-Scan UT</div>
-                            <div class="content">B-scan provides a cross-sectional view of the part's thickness, while a C-scan offers a top-down perspective of the two-dimensional encoded area. In the C-scan, time-of-flight or amplitude values are depicted using a color-coded palette.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#409AB4">
-                            <div class="step"><i class="fas fa-bolt"></i></div>
-                            <div class="title">Corrosion Under Insulation – Pulse Eddy Current Testing</div>
-                            <div class="content">Pulsed Eddy Current technology utilizes electromagnetic principles to deliver average wall thickness measurements across the probe's footprint. It assesses and compares the percentage variation in average wall thickness throughout the entire object.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#2189A6">
-                            <div class="step"><i class="fas fa-cogs"></i></div> 
-                            <div class="title">Eddy Current Array</div>
-                            <div class="content">Eddy Current Array (ECA) is a non-destructive testing technology that operates multiple eddy current coils arranged adjacently within a single probe assembly. Each coil within the probe generates a signal that corresponds to the amplitude and phase of the underlying structure.</div>
-                        </li>
-                    </ol>
-
-                </div>
-            </div>
-
-            <div class="grid-container2">
-                <div class="grid-item item3">
-                    <ol class="ol-cards alternate" style="margin-left: 0;">
-                        <li style="--ol-cards-color-accent:#06768D">
-                            <div class="step"><i class="fas fa-ruler"></i></div> 
-                            <div class="title">Long Range Ultrasonic Testing</div>
-                            <div class="content">Long Range Ultrasonic Testing (LRUT), or Guided Wave Ultrasonic Testing (GWUT), is an ultrasonic method that involves transmitting waves along the pipe wall (guiding walls) for distances of up to 180 meters.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#8BD0D6">
-                            <div class="step"><i class="fas fa-compass"></i></div> 
-                            <div class="title">Magnetic Flux Leakage Testing</div>
-                            <div class="content">Magnetic Flux Leakage (MFL) is a magnetic non-destructive testing technique designed to identify corrosion, pitting, and wall loss in steel structures. It is particularly prevalent for inspecting tank floors in the petrochemical sector.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#72BECB">
-                            <div class="step"><i class="fas fa-bezier-curve"></i></div> 
-                            <div class="title">Phased Array Ultrasonic Testing</div>
-                            <div class="content">Phased Array Ultrasonic Testing (PAUT) is an advanced inspection technique that utilizes beam-forming technology to detect and size defects within complex geometries. This method allows for precise and detailed examination by electronically controlling the angle and focus of ultrasonic beams.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#5AACBF">
-                            <div class="step"><i class="fas fa-tag"></i></div> 
-                            <div class="title">Positive Metal Identification</div>
-                            <div class="content">Positive Material Identification (PMI) is a swift and non-destructive testing (NDT) method employed to verify the chemical composition of metals and alloys. It is used to confirm that materials meet the necessary standards and specifications.</div>
-                        </li>
-                        <li style="--ol-cards-color-accent:#409AB4">
-                            <div class="step"><i class="fas fa-search"></i></div> 
-                            <div class="title">Videoscope/Boroscope Inspection</div>
-                            <div class="content">Borescope inspection, or Remote Visual Inspection (RVI), utilizes a flexible or rigid optical device that permits the examination of areas otherwise inaccessible. This technique allows inspectors to observe and assess confined or obstructed regions with precision.</div>
-                        </li>
-                    </ol>
-
-                </div>
-                <div class="grid-item item4">
-                    <img src="{{ url('assets/build/img/services/Advanced NDT Services 2 updated.jpg') }}" alt="Service Background Image">
-                </div>
-            </div>
-        </div> -->
-
-        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         <div class="dim-overlay"></div>
         <div id="conventional-list-popup" class="content-list-popup">
             <h2>Conventional NDT Services</h2>
             <div class="grid-container1">
                 <div class="grid-item item1">
-                    <img src="{{ url('build/img/services/Conventional NDT Services updated.jpg') }}" alt="Service Background Image">
+                    <img src="{{ url('build/img/service_img/conventional_NDT_desc1.jpeg') }}" alt="Service Background Image">
                 </div>
                 <div class="grid-item item2">
                     <ol class="ol-cards alternate" style="margin-left: 0;">
@@ -349,7 +218,7 @@
 
                 </div>
                 <div class="grid-item item4">
-                    <img src="{{ url('build/img/services/Conventional NDT Services 2 updated.jpg') }}" alt="Service Background Image">
+                    <img src="{{ url('build/img/service_img/conventional_NDT_desc2.jpeg') }}" alt="Service Background Image">
                 </div>
             </div>
         </div>
@@ -359,7 +228,7 @@
         <h2>Advanced NDT Services</h2>
             <div class="grid-container1">
                 <div class="grid-item item1">
-                    <img src="{{ url('build/img/services/Advanced NDT Services updated.jpg') }}" alt="Service Background Image">
+                    <img src="{{ url('build/img/service_img/advance_NDT_desc1.jpeg') }}" alt="Service Background Image">
                 </div>
                 <div class="grid-item item2">
                     <ol class="ol-cards alternate" style="margin-left: 0;">
@@ -422,15 +291,12 @@
                             <div class="content">Borescope inspection, or Remote Visual Inspection (RVI), utilizes a flexible or rigid optical device that permits the examination of areas otherwise inaccessible. This technique allows inspectors to observe and assess confined or obstructed regions with precision.</div>
                         </li>
                     </ol>
-
                 </div>
                 <div class="grid-item item4">
-                    <img src="{{ url('build/img/services/Advanced NDT Services 2 updated.jpg') }}" alt="Service Background Image">
+                    <img src="{{ url('build/img/service_img/advance_NDT_desc2.jpeg') }}" alt="Service Background Image">
                 </div>
             </div>
         </div>
-
-
     </section>
 
 
@@ -445,7 +311,7 @@
 
         <div class="service-grid-init">
             <div class="service-grid-item right-triangle" style="border-top-left-radius: 15px;">
-                <img src="{{ url('build/img/bottom_service/Process Pressure Vessels img.jpg') }}" alt="Service Background Image">
+                <img src="{{ url('build/img/service_img/process_pressure_vessels.jpeg') }}" alt="Service Background Image">
                 <div class="right-triangle">
                 </div>
             </div>
@@ -455,7 +321,7 @@
                 <p class="view-list">View More</p>
 
             </div>
-            <div class="service-grid-item right-triangle"><img src="{{ url('build/img/bottom_service/heat.jpg') }}" alt="Service Background Image"></div>
+            <div class="service-grid-item right-triangle"><img src="{{ url('build/img/service_img/heat_transfer_equipment.jpg') }}" alt="Service Background Image"></div>
             <div class="service-grid-item service-grid-item-odd hover-effect" style="border-top-right-radius: 15px;" onclick="scrollToTop(this); toggleActive(this); toggleContent2('Heat-Transfer-Equipment')">
                 <h1>Heat Transfer Equipment</h1>
 
@@ -504,13 +370,13 @@
                 <!-- <h6>description</h6> -->
                 <p class="view-list">View More</p>
             </div>
-            <div class="service-grid-item left-triangle"><img src="{{ url('build/img/bottom_service/mechanical.jpg') }}" alt="Service Background Image"></div>
+            <div class="service-grid-item left-triangle"><img src="{{ url('build/img/service_img/inspection_storage_card.jpg') }}" alt="Service Background Image"></div>
             <div class="service-grid-item service-grid-item-even hover-effect" onclick="scrollToTop(this); toggleActive(this); toggleContent2('Mechanical')">
                 <h1>Mechanical</h1>
                 <!-- <h6>description</h6> -->
                 <p class="view-list">View More</p>
             </div>
-            <div class="service-grid-item left-triangle"><img src="{{ url('build/img/bottom_service/storage img.jpg') }}" alt="Service Background Image"></div>
+            <div class="service-grid-item left-triangle"><img src="{{ url('build/img/service_img/mechanical.jpeg') }}" alt="Service Background Image"></div>
         </div>
 
         <section id="Storage-Facilities" class="dropdown-service-list">
@@ -546,12 +412,12 @@
         </section>
 
         <div class="service-grid-init">
-            <div class="service-grid-item right-triangle" style="border-bottom-left-radius: 15px;"><img src="{{ url('build/img/bottom_service/Subsea and Offshore Fabrication img.jpg') }}" alt="Service Background Image"></div>
+            <div class="service-grid-item right-triangle" style="border-bottom-left-radius: 15px;"><img src="{{ url('build/img/service_img/subsea_and_offshore_fabrication.jpeg') }}" alt="Service Background Image"></div>
             <div class="service-grid-item service-grid-item-odd hover-effect" onclick="scrollToTop(this); toggleActive(this); toggleContent2('Subsea-and-Offshore-Fabrication')">
                 <h1>Subsea and Offshore Fabrication</h1>
                 <p class="view-list">View More</p>
             </div>
-            <div class="service-grid-item right-triangle"><img src="{{ url('build/img/bottom_service/Pipeline and Storage Solutions img.jpg') }}" alt="Service Background Image"></div>
+            <div class="service-grid-item right-triangle"><img src="{{ url('build/img/service_img/pipeline_and_storage_solutions.jpeg') }}" alt="Service Background Image"></div>
             <div class="service-grid-item service-grid-item-odd hover-effect" style="border-bottom-right-radius: 15px;" onclick="scrollToTop(this); toggleActive(this); toggleContent2('Pipeline-and-Storage-Solutions')">
                 <h1>Pipeline and Storage Solutions</h1>
                 <p class="view-list">View More</p>

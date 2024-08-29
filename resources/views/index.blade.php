@@ -9,13 +9,13 @@
 @section('body')
 <div class="hero">
     <video autoplay loop muted plays-inline class="back-video">
-        <source src="{{ url('build/video/VideoLanding.mp4') }}" type="video/mp4">
+        <source src="{{ url('build/img/index_img/web_landing.mp4') }}" type="video/mp4">
     </video>
     <div class="overlay-gradient"></div>
     <div class="text-overlay">
         <div class="header-content-container">
-            <h1>Commanding the <span class="highlight">Energy Sector</span> Through the <br>Seamless of <span class="highlight">Advanced Technology</span> and <span class="highlight">Innovative Solutions</span>.</h1>
-            <img src="{{ url('build/icon/jubilee no bg.png') }}" id="jubileeIcon" alt="Jubilee Icon" class="jubilee-icon">
+            <h1>Commanding the <span class="highlight">Energy Sector</span> Through the <br>Seamless of <span class="highlight">Advanced Technology</span> and <span class="highlight">Innovative Solutions</span></h1>
+            <img src="{{ url('build/img/index_img/icon/jubilee no bg.png') }}" id="jubileeIcon" alt="Jubilee Icon" class="jubilee-icon">
         </div>
     </div>
 </div>
@@ -87,20 +87,20 @@
 <section class="button-container">
     <div class="button-wrapper">
 
-        <button class="icon-button" data-hover-icon="{{ url('build/icon/inspection_icon.png') }}" href="{{ url('projectinspect') }}">
-            <img src="{{ url('build/icon/Inspection_button.png') }}" alt="Inspection Icon">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/inspection_icon.png') }}" data-href="{{ url('project') }}">
+            <img src="{{ url('build/img/index_img/icon/Inspection_button.png') }}" alt="Inspection Icon">
             <span>Inspection</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/icon/maintenance_icon.png') }}" href="{{ url('projectinspect') }}">
-            <img src="{{ url('build/icon/maintenance_button.png') }}" alt="Maintenance Icon">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/maintenance_icon.png') }}" data-href="{{ url('project') }}">
+            <img src="{{ url('build/img/index_img/icon/maintenance_button.png') }}" alt="Maintenance Icon">
             <span>Maintenance</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/icon/repair_icon.png') }}" href="{{ url('projectinspect') }}">
-            <img src="{{ url('build/icon/repair_button.png') }}" alt="Repair Icon">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/repair_icon.png') }}" data-href="{{ url('project') }}">
+            <img src="{{ url('build/img/index_img/icon/repair_button.png') }}" alt="Repair Icon">
             <span>Repair</span>
         </button>
-        <button class="icon-button" data-hover-icon="{{ url('build/icon/project_icon.png') }}" href="{{ url('projectinspect') }}">
-            <img src="{{ url('build/icon/special_project.png') }}" alt="Special Project Icon">
+        <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/project_icon.png') }}" data-href="{{ url('project') }}">
+            <img src="{{ url('build/img/index_img/icon/special_project.png') }}" alt="Special Project Icon">
             <span>Special Project</span>
         </button>
     </div>
@@ -117,9 +117,9 @@
             <!-- Card 1 -->
             <div class="card" onclick="openPopup('popup1')">
                 <div class="card-image">
-                    <img src="{{ url('build/img/mission.jpg') }}" alt="Mission Image" class="card-image" style="object-fit: cover;">
+                    <img src="{{ url('build/img/index_img/our_mission_card.jpg') }}" alt="Mission Image" class="card-image" style="object-fit: cover;">
                 </div>
-                <img src="{{ url('build/img/MissionIcon.png') }}" class="card-icon" alt="Mission Icon" width="40" height="40">
+                <img src="{{ url('build/img/index_img/icon/MissionIcon.png') }}" class="card-icon" alt="Mission Icon" width="40" height="40">
                 <div class="text-container">
                     <div class="text-content">
                         <div class="card-header-head">Our Mission</div>
@@ -135,11 +135,11 @@
                 <div class="popup-content">
                     <span class="popup-close" onclick="closePopup('popup1')">&times;</span>
                     <div class="popup-image">
-                        <img src="{{ url('build/img/mission.jpg') }}" alt="Popup Image" class="popup-image-img">
+                        <img src="{{ url('build/img/index_img/our_mission_card.jpg') }}" alt="Popup Image" class="popup-image-img">
                     </div>
                     <div class="popup-bottom-gradient"></div>
                     <div class="popup-text-content">
-                        <img src="{{ url('build/img/MissionIcon.png') }}" alt="Popup Icon" class="popup-icon">
+                        <img src="{{ url('build/img/index_img/icon/MissionIcon.png') }}" alt="Popup Icon" class="popup-icon">
                         <div class="popup-header">Our Mission</div>
                         <div class="popup-p">
                             Dedicated to the noble mission of championing the core values of customer dedication, unparalleled service proficiency, and unwavering commitment to safety, we meticulously craft our endeavours with precision.
@@ -155,9 +155,9 @@
             <!-- Card 2 -->
             <div class="card" onclick="openPopup('popup2')">
                 <div class="card-image">
-                    <img src="{{ url('build/img/solution provider.jpg') }}" alt="Solution Provider Image" class="card-image" style="object-fit: cover;">
+                    <img src="{{ url('build/img/index_img/solutions_provider_card.jpg') }}" alt="Solution Provider Image" class="card-image" style="object-fit: cover;">
                 </div>
-                <img src="{{ url('build/img/SolutionProviderIcon.png') }}" class="card-icon" alt="Solution Provider Icon" width="40" height="40">
+                <img src="{{ url('build/img/index_img/icon/SolutionProviderIcon.png') }}" class="card-icon" alt="Solution Provider Icon" width="40" height="40">
                 <div class="text-container">
                     <div class="text-content">
                         <div class="card-header-head">Solutions Provider</div>
@@ -174,11 +174,11 @@
                 <div class="popup-content">
                     <span class="popup-close" onclick="closePopup('popup2')">&times;</span>
                     <div class="popup-image">
-                        <img src="{{ url('build/img/solution provider.jpg') }}" alt="Popup Image" class="popup-image-img">
+                        <img src="{{ url('build/img/index_img/solutions_provider_card.jpg') }}" alt="Popup Image" class="popup-image-img">
                     </div>
                     <div class="popup-bottom-gradient"></div>
                     <div class="popup-text-content">
-                        <img src="{{ url('build/img/SolutionProviderIcon.png') }}" alt="Popup Icon" class="popup-icon">
+                        <img src="{{ url('build/img/index_img/icon/SolutionProviderIcon.png') }}" alt="Popup Icon" class="popup-icon">
                         <div class="popup-header">Solutions Provider</div>
                         <div class="popup-p">
                             At the forefront of the energy sector, our company stands as a premier solution provider, leveraging our extensive expertise in inspection, maintenance, and repair services. With a team comprising seasoned professionals adept in these specialized areas, we excel in delivering tailored solutions to meet the diverse needs of both local and international clients. Our commitment to excellence drives us to continuously refine our methodologies and embrace innovative technologies, ensuring that we remain at the forefront of industry standards. Whether it's optimizing operational efficiency, enhancing safety protocols, or prolonging asset lifespan, our comprehensive approach is designed to exceed expectations and foster enduring partnerships in the ever-evolving energy landscape.
@@ -193,9 +193,9 @@
             <!-- Card 3 -->
             <div class="card" onclick="openPopup('popup3')">
                 <div class="card-image">
-                    <img src="{{ url('build/img/template2.jpg') }}" alt="Services Image" class="card-image" style="object-fit: cover;">
+                    <img src="{{ url('build/img/index_img/service_card.jpg') }}" alt="Services Image" class="card-image" style="object-fit: cover;">
                 </div>
-                <img src="{{ url('build/img/ServicesIcon.png') }}" class="card-icon" alt="Services Icon" width="40" height="40">
+                <img src="{{ url('build/img/index_img/icon/ServicesIcon.png') }}" class="card-icon" alt="Services Icon" width="40" height="40">
                 <div class="text-container">
                     <div class="text-content">
                         <div class="card-header-head">Services</div>
@@ -211,11 +211,11 @@
                 <div class="popup-content">
                     <span class="popup-close" onclick="closePopup('popup3')">&times;</span>
                     <div class="popup-image">
-                        <img src="{{ url('build/img/template2.jpg') }}" alt="Popup Image" class="popup-image-img">
+                        <img src="{{ url('build/img/index_img/service_card.jpg') }}" alt="Popup Image" class="popup-image-img">
                     </div>
                     <div class="popup-bottom-gradient"></div>
                     <div class="popup-text-content">
-                        <img src="{{ url('build/img/ServicesIcon.png') }}" alt="Popup Icon" class="popup-icon">
+                        <img src="{{ url('build/img/index_img/icon/ServicesIcon.png') }}" alt="Popup Icon" class="popup-icon">
                         <div class="popup-header">Services</div>
                         <div class="popup-p">
                             At Vision One Sdn. Bhd., we specialize in delivering top-tier solutions tailored to the needs of EPCC contractors, offshore fabricators, and process package specialists. Our expertise spans the oil and gas, petrochemical, and other diverse sectors, both domestically and internationally. We are committed to providing exceptional quality and innovation, ensuring the highest standards in every project we undertake.
@@ -230,9 +230,9 @@
             <!-- Card 4 -->
             <div class="card" onclick="openPopup('popup4')">
                 <div class="card-image">
-                    <img src="{{ url('build/img/partnership.jpg') }}" alt="Partnership Image" class="card-image" style="object-fit: cover;">
+                    <img src="{{ url('build/img/index_img/partnership_card.jpg') }}" alt="Partnership Image" class="card-image" style="object-fit: cover;">
                 </div>
-                <img src="{{ url('build/img/PartnershipIcon.png') }}" class="card-icon" alt="Partnership Icon" width="40" height="40">
+                <img src="{{ url('build/img/index_img/icon/PartnershipIcon.png') }}" class="card-icon" alt="Partnership Icon" width="40" height="40">
                 <div class="text-container">
                     <div class="text-content">
                         <div class="card-header-head">Partnership</div>
@@ -248,11 +248,11 @@
                 <div class="popup-content">
                     <span class="popup-close" onclick="closePopup('popup4')">&times;</span>
                     <div class="popup-image">
-                        <img src="{{ url('build/img/partnership.jpg') }}" alt="Popup Image" class="popup-image-img">
+                        <img src="{{ url('build/img/index_img/partnership_card.jpg') }}" alt="Popup Image" class="popup-image-img">
                     </div>
                     <div class="popup-bottom-gradient"></div>
                     <div class="popup-text-content">
-                        <img src="{{ url('build/img/PartnershipIcon.png') }}" alt="Popup Icon" class="popup-icon">
+                        <img src="{{ url('build/img/index_img/icon/PartnershipIcon.png') }}" alt="Popup Icon" class="popup-icon">
                         <div class="popup-header">Partnership</div>
                         <div class="popup-p">
                             At Vision One Sdn. Bhd., we cultivate strong partnerships to deliver tailored solutions and exceptional service across various industries. Our collaborative approach ensures that we meet and exceed client expectations while driving mutual success and growth.
@@ -279,25 +279,25 @@
 
 <section class="why-vision-one">
     <div class="icon-text-item">
-        <img src="{{ url('build/icon/team_icon.png') }}" alt="Team Icon">
+        <img src="{{ url('build/img/index_img/icon/team_icon.png') }}" alt="Team Icon">
         <div class="text-container">
             <p><span class="highlight">Dynamic and diverse team</span> in engineering and management</p>
         </div>
     </div>
     <div class="icon-text-item">
-        <img src="{{ url('build/icon/energy_icon.png') }}" alt="Energy Icon">
+        <img src="{{ url('build/img/index_img/icon/energy_icon.png') }}" alt="Energy Icon">
         <div class="text-container">
             <p>We aim to <span class="highlight">advance significantly</span> within the <span class="highlight">global energy sector</span></p>
         </div>
     </div>
     <div class="icon-text-item">
-        <img src="{{ url('build/icon/safety_icon.png') }}" alt="Safety Icon">
+        <img src="{{ url('build/img/index_img/icon/safety_icon.png') }}" alt="Safety Icon">
         <div class="text-container">
             <p><span class="highlight">Safety</span> is a cornerstone of our operations, prioritized at every step</p>
         </div>
     </div>
     <div class="icon-text-item">
-        <img src="{{ url('build/icon/integrity_icon.png') }}" alt="Integrity Icon">
+        <img src="{{ url('build/img/index_img/icon/integrity_icon.png') }}" alt="Integrity Icon">
         <div class="text-container">
             <p>Solidifying our reputation as a dependable contractor known for <span class="highlight">integrity</span></p>
         </div>
@@ -515,6 +515,12 @@
     }
 
     animate(); // Start the animation
+
+    document.querySelectorAll('.icon-button').forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = this.getAttribute('data-href');
+        });
+    });
 </script>
 
 <script>

@@ -1,0 +1,1446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candara, sans-serif;
+
+
+    h1 {
+        font-family: Candara, sans-serif;
+        font-weight: normal;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        top: 0;
+    }
+
+    .hero .back-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* Make sure this is set to cover */
+        object-position: top;
+        /* Align the image to the top */
+        z-index: -1;
+
+    }
+
+    .white-section {
+        background: #fffafa;
+        position: relative;
+        z-index: 0;
+    }
+
+
+
+
+    .overlay-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        /* 50% of the viewport width */
+        height: 100%;
+        /* Height of the hero section */
+        background: linear-gradient(to bottom right, #06768D 30%, rgba(0, 0, 0, 0) 90%);
+        z-index: 2;
+        /* Adjust for cross-browser compatibility */
+        background: -webkit-linear-gradient(top left, #06768D 30%, rgba(0, 0, 0, 0) 90%);
+        /* For Safari */
+    }
+
+
+    .text-overlay {
+        position: absolute;
+        left: 0;
+        /* Change to absolute to position relative to .hero */
+        bottom: 20px;
+        /* Adjust distance from the bottom */
+        /* Adjust distance from the left */
+        color: #FFFAFA !important;
+        z-index: 3;
+        text-align: left !important;
+        margin-left: 8%;
+    }
+
+    .text-overlay h2 {
+        font-family: Helvetica, sans-serif !important;
+        font-weight: bold !important;
+        color: #FFFAFA !important;
+        font-size: 3rem !important;
+    }
+
+    .text-overlay2 {
+        position: absolute;
+        top: 25%;
+        /* Adjust as needed */
+        left: 0;
+        /* Adjust as needed */
+        color: white;
+        z-index: 3;
+        margin-left: 8%;
+        width: 40%;
+    }
+
+    .text-overlay2 h2 {
+        font-family: Helvetica, sans-serif !important;
+        font-weight: bold !important;
+        color: #FFFAFA !important;
+        font-size: 4rem !important;
+    }
+
+    .text-overlay2 p {
+        font-family: Helvetica, sans-serif !important;
+        font-weight: 400 !important;
+        color: #FFFAFA !important;
+        font-size: 1.15rem !important;
+    }
+
+    .text-overlay2 .highlight {
+        font-size: 5rem !important;
+        font-weight: bold;
+        color: #97ebfc;
+    }
+
+
+
+    .highlight {
+        color: #06768D;
+        /* Highlight color */
+        font-weight: bold;
+    }
+
+    .title-offset {
+        position: relative;
+        display: inline-block;
+    }
+
+    .background-text {
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        font-weight: bold;
+        font-size: 4rem;
+        color: rgba(6, 118, 141, 0.1);
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .foreground-text {
+        bottom: 0;
+        left: 0;
+        position: relative;
+        font-weight: bold;
+        font-size: 3rem;
+        color: #06768D;
+        z-index: 2;
+    }
+
+    .title-content {
+        text-align: left;
+        padding-top: 20px;
+        margin-left: 8%;
+        margin-right: 8%;
+        gap: 30px;
+    }
+
+    .title-content h2 {
+        font-weight: bold !important;
+        color: #06768D !important;
+    }
+
+    .title-content p {
+        text-align: justify;
+        color: black !important;
+        font-size: 1.25rem !important;
+    }
+
+    .our-service {
+
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card-container {
+        position: relative;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .cards-wrapper {
+        padding: 20px 45px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .left-fade {
+        position: absolute;
+        left: 0px;
+        height: 100%;
+        width: 45px;
+        background: linear-gradient(to right, #FFFAFA, rgba(0, 0, 0, 0) 70%);
+        z-index: 1;
+    }
+
+    .right-fade {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 45px;
+        background: linear-gradient(to left, #FFFAFA, rgba(0, 0, 0, 0) 70%);
+        z-index: 1;
+    }
+
+    .scroll-btn {
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #06768D;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 3;
+        display: none;
+        /* Hide by default */
+    }
+
+    .scroll-btn.left {
+        left: 20px;
+    }
+
+    .scroll-btn.right {
+        right: 20px;
+    }
+
+    /* Show buttons when content overflows */
+    .card-container.show-buttons .scroll-btn {
+        display: block;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        position: relative;
+        width: 375px;
+        height: 50vh;
+        overflow: hidden;
+        border-radius: 15px !important;
+        background-color: #36454F;
+        color: #FFFAFA;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .card:hover .card-image {
+        transform: scale(1.1);
+    }
+
+    .card-image::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to top, #06768D, rgba(6, 119, 141, 0));
+        z-index: 1;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .card:hover .card-image::before {
+        height: 50%;
+    }
+
+
+    .card:hover .card-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card-header-head {
+        position: absolute;
+        bottom: 5%;
+        left: 100px;
+        right: 20px;
+        padding: 10px;
+        text-align: left;
+        color: #FFFAFA;
+        font-size: 1.55rem;
+        font-weight: bold;
+        z-index: 2;
+        transition: bottom 0.3s ease;
+
+    }
+
+
+    .card-content {
+        position: absolute;
+        bottom: 0px;
+        left: 100px;
+        right: 0;
+        padding: 10px;
+        text-align: left;
+        color: #FFFAFA;
+        font-size: 1rem;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(100%);
+    }
+
+
+    .card:hover .card-header-head {
+        bottom: 60px;
+    }
+
+    .card-icon {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        z-index: 4;
+    }
+
+    .card-icons-container {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        display: flex;
+        gap: 15px;
+        /* Adjust the gap between the icons as needed */
+        z-index: 4;
+        /* Ensure it stays above other elements */
+    }
+
+    .card-icon-top {
+        width: auto;
+        /* Adjust width as needed */
+        height: 40px;
+        /* Adjust height as needed */
+        object-fit: cover;
+    }
+
+
+    .service-section {
+        margin-bottom: 20px;
+    }
+
+    .content-list {
+        max-height: 0;
+        /* Hide content initially */
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        /* Smooth transition */
+        padding-left: 0;
+        border-radius: 2px !important;
+        background-color: #f3f2f2;
+        margin-bottom: 2%;
+    }
+
+    .content-list-show {
+        max-height: 1000px;
+        /* Ensure this is larger than the tallest content */
+        transition: max-height 0.5s ease-in;
+    }
+
+    .content-list.active {
+        max-height: 1000px;
+        /* Adjust as needed */
+    }
+
+
+    /* Dim background overlay */
+    .dim-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Dim effect */
+        z-index: 999;
+        /* Just below the popup */
+        display: none;
+        /* Hidden by default */
+    }
+
+    /* Updated popup style */
+    .content-list-popup {
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-height: 90vh;
+        /* Set max height for scrolling */
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px;
+        overflow-y: auto;
+        /* Make content scrollable */
+        display: none;
+    }
+
+
+    .content-list-popup.active {
+        display: block;
+    }
+
+    .content-list-popup h2{
+        font-weight: bold !important;
+        color: #06768D !important;
+        font-size: 2.5rem !important;
+        margin-top: 15px;
+        margin-left:20px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+
+
+    .toggle-btn {
+        float: right;
+        background-color: #06768D;
+        /* Custom button color */
+        font-size: 24px;
+        /* Adjusted font size for larger button */
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        color: #FFFFFF;
+        /* Text color */
+        padding: 10px;
+        /* Adjust padding if needed */
+        border: none;
+        /* No border */
+        border-radius: 5px;
+        /* Rounded corners */
+    }
+
+    .toggle-btn.open {
+        transform: rotate(90deg);
+        /* Rotate the button when open */
+    }
+
+    .inspection-container {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        align-items: stretch;
+        /* This ensures vertical centering */
+        padding-top: 20px;
+        margin-left: 8%;
+        margin-right: 8%;
+        gap: 20px;
+        color: #FFFAFA;
+    }
+
+    .service-list {
+        text-align: left;
+        padding-top: 20px;
+        margin-left: 8%;
+        margin-right: 8%;
+        color: #FFFAFA;
+        gap: 30px;
+    }
+
+    .dropdown-service-list {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        text-align: left;
+        color: #FFFAFA;
+    }
+
+    /* When active, set a large max-height to show content */
+    .dropdown-service-list.active {
+        max-height: 1000px;
+        /* This should be large enough to fit your content */
+    }
+
+
+    .service-list h1 {
+        text-align: left;
+        padding-left: 32px;
+        font-family: Helvetica, sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #353434;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100% auto;
+        /* Two columns, second one twice as wide */
+        grid-template-rows: auto auto;
+        /* Two rows */
+        grid-template-areas:
+            "itemfull";
+        /* First row layout */
+        gap: 1em;
+        /* Space between grid items */
+    }
+
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 30% auto;
+        /* Two columns, second one twice as wide */
+        grid-template-rows: auto auto;
+        /* Two rows */
+        grid-template-areas:
+            "item1 item2";
+        /* First row layout */
+        gap: 1em;
+        /* Space between grid items */
+    }
+
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: auto 30%;
+        /* Two columns, second one twice as wide */
+        grid-template-rows: auto auto;
+        /* Two rows */
+        grid-template-areas:
+            "item3 item4";
+        /* Second row layout */
+        gap: 1em;
+        /* Space between grid items */
+    }
+
+
+    /* Define the grid areas for each item */
+    .item1 {
+        grid-area: item1;
+        display: flex;
+        align-items: center;
+        /* Vertically centers the image */
+        justify-content: center;
+        /* Horizontally centers the image */
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+        display: flex;
+        align-items: center;
+        /* Vertically centers the image */
+        justify-content: center;
+        /* Horizontally centers the image */
+    }
+
+    .itemfull {
+        grid-area: itemfull;
+    }
+
+
+    .item1 img,
+    .item4 img {
+        /* Make image fill its container minus 32px */
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        object-fit: cover;
+        /* Adjust this to fit the image as needed */
+        border-radius: 15px !important;
+
+    }
+
+
+    .ol-cards,
+    .ol-cards *,
+    .ol-cards *::before,
+    .ol-cards *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .ol-cards {
+        --ol-cards-color-bg: #E6F1F3;
+        /* Slightly different white */
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 2em;
+        gap: 2em;
+        counter-reset: ol-cards-counter;
+    }
+
+    .ol-cards li {
+        display: grid;
+        grid-template-columns: 20% auto;
+        /* 20% for step and auto for content */
+        grid-template-areas:
+            "step title"
+            "step content";
+        padding: 1em 0em;
+        column-gap: 2em;
+        box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4),
+            inset 0.05em 0.05em rgba(255, 255, 255, 1);
+        counter-increment: ol-cards-counter;
+        background-color: var(--ol-cards-color-bg);
+        text-align: left;
+        /* Default alignment */
+    }
+
+    .ol-cards.alternate li:nth-child(even) {
+        grid-template-columns: auto 20%;
+        /* Switch layout for even items */
+        grid-template-areas:
+            "title step"
+            "content step";
+        padding: 1em 0 1em 2em;
+    }
+
+    .ol-cards li .step {
+        grid-area: step;
+        display: flex;
+        align-items: center;
+        /* Center vertically */
+        background-color: var(--ol-cards-color-accent);
+        border-radius: 0 50em 50em 0;
+        padding: 1em;
+        justify-content: flex-end;
+        box-shadow: inset 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.4),
+            0em 0.05em rgba(255, 255, 255, 1);
+        flex: 0 0 25px;
+        /* Set a fixed width */
+        gap: 1em;
+    }
+
+    .ol-cards.alternate li:nth-child(even) .step {
+        border-radius: 50em 0 0 50em;
+        flex-direction: row-reverse;
+    }
+
+    .ol-cards li .step i {
+        color: var(--ol-cards-color-accent);
+        width: 2em;
+        height: 2em;
+        font-size: 1.8em;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background-color: var(--ol-cards-color-bg);
+        box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.4),
+            inset 0.05em 0.05em rgba(255, 255, 255, 1);
+    }
+
+    .ol-cards li .title {
+        color: #06768D;
+        grid-area: title;
+        font-weight: bold;
+        font-size: 1.5em;
+        ;
+        display: flex;
+        align-items: center;
+        /* Center vertically */
+        /* Default horizontal alignment */
+        justify-content: flex-start;
+        /* Default: left for odd items */
+    }
+
+    .ol-cards li .content {
+        color: #1f1f1f;
+        grid-area: content;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .ol-cards {
+            padding: 1em;
+        }
+
+        .ol-cards li {
+            column-gap: 0em;
+            grid-template-areas:
+                'step title'
+                'content content';
+            grid-template-columns: min-content auto;
+            padding: 1em 0em;
+        }
+
+        .ol-cards.alternate li:nth-child(even) {
+            column-gap: 0em;
+            grid-template-areas:
+                'title step'
+                'content content';
+            grid-template-columns: auto min-content;
+            padding: 1em 0em;
+        }
+
+        .ol-cards li .title {
+            padding: 0 1em;
+            width: auto;
+            /* Center horizontally on small screens */
+        }
+
+        .ol-cards li .step {
+            font-size: .5em;
+        }
+
+        .ol-cards li .content {
+            padding: 0 1em;
+        }
+    }
+
+    .service-grid-init {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service-grid-item {
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 1 / 0.65;
+        /* Maintains the aspect ratio */
+        background-color: #FFFFFF;
+        /* Default background color */
+        transition: background-color 0.3s ease;
+        /* Smooth transition for color change */
+    }
+
+    .service-grid-item-odd {
+        /* background-color: #FFFFFF; */
+        background: linear-gradient(to right, #ffffff, #8BD0D6);
+    }
+
+    .service-grid-item-even {
+        /* background-color: #FFFFFF; */
+        background: linear-gradient(to left, #ffffff, #8BD0D6);
+    }
+
+    /* Hover effects */
+    .service-grid-item-odd .overlay-gradient {
+        background: linear-gradient(to right, #ffffff, #8BD0D6);
+    }
+
+    /* Hover effects */
+    .service-grid-item-odd.hover-effect:hover {
+        background: linear-gradient(to right, #ffffff, #8BD0D6);
+    }
+
+    .service-grid-item-even.hover-effect:hover {
+        background: linear-gradient(to left, #ffffff, #8BD0D6);
+    }
+
+    /* Active state styles */
+    .service-grid-item.active.service-grid-item-odd {
+        background: linear-gradient(to right, #ffffff, #8BD0D6);
+        /* Gradient for active odd items */
+    }
+
+    .service-grid-item.active.service-grid-item-even {
+        background: linear-gradient(to left, #ffffff, #8BD0D6);
+        /* Gradient for active even items */
+    }
+
+    .service-grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensures the image covers the grid item */
+    }
+
+    /* Triangle on the right */
+    .service-grid-item.right-triangle::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        /* Adjust the width of the triangle */
+        border-top: 20px solid #FFFFFF;
+        /* Color of the triangle */
+    }
+
+    /* Triangle on the left */
+    .service-grid-item.left-triangle::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        /* Adjust the width of the triangle */
+        border-top: 20px solid #FFFFFF;
+        /* Color of the triangle */
+    }
+
+    .service-grid-item h1 {
+        margin-top: 10%;
+        /* Adjust as needed */
+        margin-left: 30px;
+        margin-bottom: 0;
+        font-size: 1.2em;
+        /* Adjust as needed */
+        text-align: left;
+        width: 80%;
+        /* Adjust as needed */
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .service-grid-item h6 {
+        margin-top: 10px;
+        /* Add space between h1 and h6 */
+        margin-left: 30px;
+        /* Adjust as needed */
+        text-align: left;
+        width: 80%;
+        /* Adjust as needed */
+        font-weight: 500;
+        color: #1f1f1f;
+        font-size: 1em;
+        line-height: 1.3;
+    }
+
+    .service-grid-item ul {
+        margin-top: 10px;
+        margin-left: 30px;
+        list-style: none;
+        padding-right: 20px;
+        max-width: 100%;
+    }
+
+    .service-grid-item ul li {
+        margin-top: 7px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1f1f1f;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        /* Adjust padding if needed */
+        position: relative;
+    }
+
+    .service-grid-item ul li::before {
+        content: '➢';
+        position: absolute;
+        left: 0;
+        color: #06768D;
+        font-weight: bold;
+    }
+
+    .view-list {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        margin: 0;
+        color: #1f1f1f;
+        cursor: pointer;
+        /* Change the cursor to pointer to indicate it's clickable */
+        border-radius: 5px;
+        /* Optional: rounded corners */
+        z-index: 100;
+        /* Ensure it appears above other content */
+        transition: background-color 0.3s ease;
+        /* Smooth transition for the hover effect */
+    }
+
+    .view-list:hover {
+        color: #06768D;
+        /* Change the background color to yellow */
+    }
+
+    .ndt-card,
+    .ndt-card-first {
+        position: relative;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+
+    .ndt-card {
+        width: 20%;
+        /* Fixed width for ndt-card */
+        height: 490px;
+        /* Takes full height of the parent */
+    }
+
+    .ndt-card-first {
+        width: 50%;
+        /* Fixed width for ndt-card-first */
+        height: 490px;
+        /* Will follow the height of ndt-card */
+        flex: 1;
+        /* Ensures it grows to match the height */
+        border-radius: 15px;
+    }
+
+    .ndt-background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        /* Ensures the video stays behind other content */
+    }
+
+    .ndt-card-image-first {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ndt-card-image-first img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ndt-card-desc {
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+        color: white;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .ndt-card-desc-green-bg {
+        position: absolute;
+        height: 70%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, #06768D, rgba(6, 119, 141, 0));
+    }
+
+
+
+
+    .ndt-card-image img {
+        width: 100%;
+        /* Make the image fill the container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .ndt-card-content {
+        padding: 15px;
+        /* Padding inside the card */
+    }
+
+    .ndt-card-title {
+        margin: 20px;
+        margin-bottom: 0;
+        font-size: 1.2em;
+        /* Adjust as needed */
+        text-align: left;
+        width: 80%;
+        /* Adjust as needed */
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .ndt-card-description {
+        margin: 20px;
+        margin-top: 10px;
+        font-size: 1em;
+        /* Adjust as needed */
+        text-align: left;
+        /* Adjust as needed */
+        font-weight: 100;
+        color: #000000;
+    }
+
+    .ndt-card-link {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        margin: 0;
+        color: #1f1f1f;
+        cursor: pointer;
+        /* Change the cursor to pointer to indicate it's clickable */
+        border-radius: 5px;
+        /* Optional: rounded corners */
+        z-index: 100;
+        /* Ensure it appears above other content */
+        transition: background-color 0.3s ease;
+        /* Smooth transition for the hover effect */
+    }
+
+    .ndt-card-link:hover {
+        color: #06768D;
+    }
+
+    .ndt-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Increase shadow on hover */
+        transform: translateY(-5px);
+        /* Move the card upwards slightly */
+    }
+
+
+    /* Exclude .no-hover class from hover effect */
+    .ndt-card.no-hover:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Maintain original shadow */
+        transform: none;
+        /* Prevent upward movement */
+    }
+
+    /* Active State */
+    .ndt-card.active {
+        background-color: #f3f2f2;
+        /* Change background color when active */
+        /* Optionally, you can add other styles here if needed */
+    }
+
+
+    .ndt-card .drop-down-ndt {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        margin: 0;
+        color: #1f1f1f;
+        cursor: pointer;
+        /* Change the cursor to pointer to indicate it's clickable */
+        border-radius: 5px;
+        /* Optional: rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition for the hover effect */
+    }
+
+    .ndt-card .drop-down-ndt:hover {
+        color: #06768D;
+        /* Change the background color to yellow */
+    }
+
+    .client-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        /* Adjust the gap between items if needed */
+        align-items: stretch;
+        text-align: center;
+        padding: 20px;
+        /* Add some padding around the grid */
+    }
+
+    .client-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* Ensure content is spaced evenly */
+        background-color: #f8f9fa;
+        /* Light background color for items */
+        border: 1px solid #ddd;
+        /* Light border for items */
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 10px;
+        /* Padding inside each item */
+        transition: transform 0.3s, box-shadow 0.3s;
+        /* Smooth transitions for hover effects */
+        height: 150px;
+        /* Fixed height for items */
+    }
+
+    .client-item:hover {
+        transform: translateY(-5px);
+        /* Slight lift on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow on hover */
+    }
+
+    .client-item img {
+        width: 80px;
+        /* Set the fixed width for logos */
+        height: 60px;
+        /* Set a fixed height for logos */
+        object-fit: contain;
+        /* Ensure the entire logo is visible */
+        margin-bottom: 10px;
+        /* Space between image and text */
+    }
+
+    .client-item p {
+        margin: 0;
+        /* Remove default margin */
+        font-size: 14px;
+        font-weight: bold;
+        color: #06768D;
+        flex-grow: 1;
+        /* Ensure text takes up remaining space */
+        display: flex;
+        align-items: center;
+        /* Center text vertically */
+        justify-content: center;
+        /* Center text horizontally */
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero .back-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .hero .overlay-gradient {
+        background: radial-gradient(circle at top left, #6bbaca, rgba(0, 0, 0, 0) 80%);
+        width: 100vw;
+        /* 50% of the viewport width */
+        height: 100%;
+        /* Height of the hero section */
+    }
+
+    .hero .text-overlay2 {
+        top: 20%;
+        width: 70%;
+    }
+
+    .text-overlay2 h2 {
+        font-size: 2rem !important;
+    }
+
+    .text-overlay2 .highlight {
+        color: #06768D;
+        font-size: 3rem !important;
+    }
+
+    .text-overlay2 p {
+        font-size: 0.8rem !important;
+        text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.5);
+    }
+
+    .title-content h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .title-offset {
+        margin-top: 5px;
+    }
+
+    .background-text {
+        font-size: 2.5rem !important;
+    }
+
+    .foreground-text {
+        font-size: 2rem !important;
+    }
+
+    .title-content p {
+        font-size: 1rem !important;
+    }
+
+    .card {
+        width: 300px;
+        height: 45vh;
+    }
+
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-header-head {
+        font-size: 1.2rem;
+        bottom: 50px;
+        left: 80px;
+    }
+
+    .card-content {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 0.8rem;
+        left: 80px;
+    }
+
+    /* Mobile styles inside your media query */
+    .inspection-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        grid-template-rows: auto auto auto;
+        /* Three rows layout */
+        gap: 20px;
+        /* Adjust gap between items as needed */
+    }
+
+    .ndt-card-first {
+        grid-column: 1 / 2;
+        /* Span the single column */
+        grid-row: 1;
+        /* First row */
+        width: 100%;
+        /* Full width */
+        height: 490px;
+        /* Adjust height as needed */
+    }
+
+    .ndt-card {
+        grid-column: 1 / 2;
+        /* Span the single column */
+        grid-row: auto;
+        /* Automatic row placement */
+        width: 100%;
+        /* Full width */
+        height: 42vh;
+        /* Adjust height as needed */
+    }
+
+    .ndt-card-image img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio by adjusting height automatically */
+        max-height: 20vh; /* Limit the maximum height to 20vh */
+        object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    }
+
+
+    .ndt-card-title {
+        font-size: 1.5rem !important;
+    }
+
+    .ndt-card-description {
+        font-size: 0.9rem !important;
+    }
+
+    .ndt-card-first .ndt-card-desc {
+        text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.5);
+        position: absolute;
+        bottom: 0;
+        height: auto;
+    }
+
+    .ndt-card-first .ndt-card-desc-green-bg {
+        height: 90%;
+        background: linear-gradient(to top, #06768D, rgba(6, 119, 141, 0)100%);
+    }
+
+    .service-grid-init {
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust grid to two columns */
+        grid-template-rows: auto;
+    }
+
+    .service-grid-item {
+        aspect-ratio: 1 / 1;
+        /* Make the grid items more square-like */
+        margin-bottom: 10px;
+    }
+
+    .service-grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .service-grid-item h1 {
+        font-size: 1em;
+        /* Adjust font size */
+        margin: 15px;
+        /* Adjust margins for better spacing */
+    }
+
+    .service-grid-item p.view-list {
+        font-size: 0.9em;
+        /* Adjust font size for view list */
+        margin-left: 15px;
+        /* Align with h1 */
+    }
+
+    .service-grid-item ul {
+        margin-left: 15px;
+        /* Adjust list margin */
+    }
+
+    .service-grid-item ul li {
+        font-size: 12px;
+        /* Adjust list item font size */
+    }
+
+    /* Adjust triangle sizes for mobile */
+    .service-grid-item.right-triangle::after,
+    .service-grid-item.left-triangle::after {
+        top: 20px;
+        border-top: 10px solid #FFFFFF;
+        /* Adjust triangle size */
+    }
+
+    /* Adjust grid-container1 and grid-container2 for mobile */
+    .grid-container1, .grid-container2 {
+        display: block;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas:
+            "item2"
+            "item1"; /* Stack item2 above item1 */
+        gap: 0; /* Remove gap for mobile */
+    }
+
+    /* Hide the images on mobile */
+    .item1, .item4 {
+        display: none; /* Hide images */
+    }
+
+    /* Adjust the list items to be full width */
+    .item2, .item3 {
+        grid-area: auto; /* Let items flow naturally */
+        margin: 0; /* Remove any margin */
+    }
+
+    /* Ensure the lists take full width */
+    .ol-cards {
+        margin-left: 0;
+    }
+
+    .ol-cards li{
+        display: block;
+        border-radius: 10px;
+    }
+
+    .ol-cards li .title{
+        justify-content: flex-start !important;
+        text-align: left !important;
+        font-size: 1.2rem;
+    }
+
+    .ol-cards li .content{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .our-service{
+        margin-top: 0px;
+    }
+
+    .card-container{
+        padding: 0px;
+    }
+
+    .card {
+        width: 230px;
+        height: 35vh;
+    }
+
+    .card-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-header-head {
+        font-size: 1rem;
+        bottom: 50px;
+        left: 60px;
+    }
+
+    .card-content {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 0.8rem;
+        left: 60px;
+    }
+
+    .card-image::before {
+        height: 40%;
+    }
+
+    .ndt-card {
+        height: 42vh;
+        /* Adjust height as needed */
+    }
+
+    .ndt-card-title {
+        margin-top: 10px;
+        font-size: 1.2rem !important;
+    }
+
+    .ndt-card-description {
+        margin-top: 5px;
+        font-size: 0.8rem !important;
+    }
+
+    .ndt-card-image img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio by adjusting height automatically */
+        max-height: 20vh; /* Limit the maximum height to 20vh */
+        object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    }
+}
