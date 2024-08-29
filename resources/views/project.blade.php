@@ -84,7 +84,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var sidebarLinks = document.querySelectorAll('.sidebar-nav li');
-        var titleElement = document.querySelector('.section-title');
+        var titleElement = document.querySelector('.foreground-text');
+        var backElement = document.querySelector('.background-text');
 
         sidebarLinks.forEach(function(link) {
             link.addEventListener('click', function(event) {
@@ -97,8 +98,16 @@
 
                 if (this.id === 'maintenance-link') {
                     titleElement.textContent = 'Maintenance';
+                    backElement.textContent = 'Maintenance';
                 } else if (this.id === 'inspect-link') {
                     titleElement.textContent = 'Integrity Inspection';
+                    backElement.textContent = 'Integrity Inspection';
+                } else if (this.id === 'repair-link') {
+                    titleElement.textContent = 'Repair';
+                    backElement.textContent = 'Repair';
+                } else if (this.id === 'special-link') {
+                    titleElement.textContent = 'Special Project';
+                    backElement.textContent = 'Special Project';
                 }
             });
         });
@@ -110,9 +119,17 @@
         const viewMoreButton = document.getElementById('view-more');
         const maintenanceSidebarItem = document.querySelector('#maintenance-link');
         const inspectSidebarItem = document.querySelector('#inspect-link');
+        const repairSidebarItem = document.querySelector('#repair-link');
+        const specialSidebarItem = document.querySelector('#special-link');
 
         let currentPage = 1;
-        const itemsPerPage = 9;
+        if (window.matchMedia('(min-width: 1440px)').matches) {
+                itemsPerPage = 9; // lg screen
+            } else if (window.matchMedia('(min-width: 768px)').matches) {
+                itemsPerPage = 8; // md screen
+            } else {
+                itemsPerPage = 9; // sm screen
+            }
         let currentData = [];
         let rowCount = 0;
         let elementsPerSubArray = getElementsPerSubArray(); // Initialize with the correct value
@@ -394,6 +411,24 @@
             }
         ], elementsPerSubArray);
 
+        const dataRepair = listToMatrix([{
+                id: 1,
+                image: "{{ url('build/img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "SGS Normal Sdn Bhd",
+                year: "2015",
+                desc: "Piping Inspection - 8\" Pipe"
+            },
+        ], elementsPerSubArray);
+
+        const dataSpecial = listToMatrix([{
+                id: 1,
+                image: "{{ url('build/img/Collaborators/SGS-NORMAL.jpg') }}",
+                name: "SGS Normal Sdn Bhd",
+                year: "2015",
+                desc: "Piping Inspection - 8\" Pipe"
+            },
+        ], elementsPerSubArray);
+
         console.log('Data matrix:', dataInspect);
 
         function renderTimeline(data, page = 1) {
@@ -482,9 +517,20 @@
             }
         }
 
+        function getItemsPerPages() {
+            if (window.matchMedia('(min-width: 1440px)').matches) {
+                return 9; // lg screen
+            } else if (window.matchMedia('(min-width: 768px)').matches) {
+                return 8; // md screen
+            } else {
+                return 9; // sm screen
+            }
+        }
+
         // Recalculate elementsPerSubArray on screen resize
         window.addEventListener('resize', function() {
             elementsPerSubArray = getElementsPerSubArray();
+            itemsPerPage = getItemsPerPages();
             currentPage = 1; // Reset to first page
             currentData = listToMatrix(currentData.flat(), elementsPerSubArray); // Recreate the matrix
             timelineWrapper.innerHTML = ''; // Clear existing items
@@ -510,6 +556,20 @@
             timelineWrapper.innerHTML = ''; // Clear existing items
             currentPage = 1; // Reset to first page
             currentData = listToMatrix(dataInspect.flat(), elementsPerSubArray); // Switch data set
+            renderTimeline(currentData); // Render the first batch of items
+        });
+
+        repairSidebarItem.addEventListener('click', function() {
+            timelineWrapper.innerHTML = ''; // Clear existing items
+            currentPage = 1; // Reset to first page
+            currentData = listToMatrix(dataRepair.flat(), elementsPerSubArray); // Switch data set
+            renderTimeline(currentData); // Render the first batch of items
+        });
+
+        specialSidebarItem.addEventListener('click', function() {
+            timelineWrapper.innerHTML = ''; // Clear existing items
+            currentPage = 1; // Reset to first page
+            currentData = listToMatrix(dataSpecial.flat(), elementsPerSubArray); // Switch data set
             renderTimeline(currentData); // Render the first batch of items
         });
 
