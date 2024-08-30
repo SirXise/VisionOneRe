@@ -47,7 +47,7 @@
                 <li class="py-2" id="special-link">
                     <a href="#">
                         <div class="icon"><i class="fa fa-star"></i></div>
-                        <div class="text">Special Project</div>
+                        <div class="text">Special Projects</div>
                     </a>
                 </li>
             </ul>
@@ -106,8 +106,8 @@
                     titleElement.textContent = 'Repair';
                     backElement.textContent = 'Repair';
                 } else if (this.id === 'special-link') {
-                    titleElement.textContent = 'Special Project';
-                    backElement.textContent = 'Special Project';
+                    titleElement.textContent = 'Special Projects';
+                    backElement.textContent = 'Special Projects';
                 }
             });
         });
@@ -476,8 +476,8 @@
             } else if (section === 'special') {
                 currentData = listToMatrix(dataSpecial.flat(), elementsPerSubArray);
                 sidebarLinks[3].classList.add('active');
-                titleElement.textContent = 'Special Project';
-                backElement.textContent = 'Special Project';
+                titleElement.textContent = 'Special Projects';
+                backElement.textContent = 'Special Projects';
             } else {
                 currentData = listToMatrix(dataInspect.flat(), elementsPerSubArray);
                 sidebarLinks[0].classList.add('active');

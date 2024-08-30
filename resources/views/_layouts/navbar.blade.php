@@ -9,9 +9,9 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0 text-center">
             <a href="{{ route('home') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
-            <a href="{{ route('about') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
-            <a href="{{ route('service') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('service') ? 'active' : '' }}">Service</a>
-            <a href="{{ route('project') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Project</a>
+            <a href="{{ route('about') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About Us</a>
+            <a href="{{ route('service') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('service') ? 'active' : '' }}">Services</a>
+            <a href="{{ route('project') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('project') ? 'active' : '' }}">Projects</a>
             <a href="{{ route('contact') }}" class="navbarcustomfont nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
         </div>
     </div>
