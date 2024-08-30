@@ -100,7 +100,7 @@
                     <img src="{{ url('build/icon/project_icon.png') }}" class="card-icon" alt="Special Project Icon" width="40" height="40">
                     <div class="text-container">
                         <div class="text-content">
-                            <div class="card-header-head">Special Project</div>
+                            <div class="card-header-head">Special Projects</div>
                             <div class="card-content">
                                 <p class="hover-text">Innovative projects with remarkable outcomes.</p>
                             </div>

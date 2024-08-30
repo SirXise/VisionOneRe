@@ -104,7 +104,7 @@
         </button>
         <button class="icon-button" data-hover-icon="{{ url('build/img/index_img/icon/project_icon.png') }}" data-href="{{ url('project?section=special') }}">
             <img src="{{ url('build/img/index_img/icon/special_project.png') }}" alt="Special Project Icon">
-            <span>Special Project</span>
+            <span>Special Projects</span>
         </button>
     </div>
 </section>
