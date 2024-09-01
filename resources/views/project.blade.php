@@ -139,192 +139,348 @@
 
         const dataInspect = listToMatrix([{
                 id: 1,
-                image: "{{ url('build/img/project_img/Collaborators/MAGNA-MITRE.png') }}",
-                name: "Magna-Mitre Sdn Bhd",
-                year: "2015 - 2017",
-                desc: "Provision of Integrity Assessment, Inspection and Disposal Schedule waste of Continuously Oil Contaminated (COC), Accidently Oil Contaminated (AOC) System in Petronas LNG Complex"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2024",
+                desc: "Manpower Supply NDT Rope Access UT to Perform UT With Abseiling AT PM3 South"
             },
             {
                 id: 2,
-                image: "{{ url('build/img/project_img/Collaborators/SGS-NORMAL.jpg') }}",
-                name: "SGS Malaysia Sdn Bhd",
-                year: "2015",
-                desc: "Heating Coil Inspection NDT at Bertam FPSO"
+                image: "{{ url('build/img/project_img/VOClient/winner.png') }}",
+                name: "Winner Inspection Sdn. Bhd.",
+                year: "2024",
+                desc: "Rental of Eddyfi  Lyft PEC Equipment & Probe"
             },
             {
                 id: 3,
-                image: "{{ url('build/img/project_img/Collaborators/FPSO VENTURES.png') }}",
-                name: "//Budiman Inspection Sdn Bhd",
-                year: "2015",
-                desc: "LRUT Inspection for 12\" piping GAF System (TNB Manjung)"
+                image: "{{ url('build/img/project_img/VOClient/AriseGlobal.jpg') }}",
+                name: "Arise Star Sdn. Bhd.",
+                year: "2024",
+                desc: "Rental of ISONIC Encoder"
             },
             {
                 id: 4,
-                image: "{{ url('build/img/project_img/Collaborators/IME.png') }}",
-                name: "IME Sdn Bhd",
-                year: "2015",
-                desc: "Rope Access Team for PFPSO \n - West Desaru Mopu \n - Cendor Platform"
+                image: "{{ url('build/img/project_img/VOClient/visca-logo.png') }}",
+                name: "Visca International Sdn. Bhd.",
+                year: "2023",
+                desc: "LRUT Inspection & IRATA Service at Kuching, Sarawak."
             },
             {
                 id: 5,
-                image: "{{ url('build/img/project_img/Collaborators/Talisman[1].png') }}",
-                name: "Talisman Malaysia Limited",
-                year: "2015",
-                desc: "Spray Pig Loop Test"
+                image: "{{ url('build/img/project_img/VOClient/vouas.png') }}",
+                name: "Vision One UAS Sdn. Bhd.",
+                year: "2023",
+                desc: "Manpower Supply"
             },
             {
                 id: 6,
-                image: "{{ url('build/img/project_img/Collaborators/FPSO VENTURES.png') }}",
-                name: "//Alam Hidro (M) Sdn Bhd",
-                year: "2015",
-                desc: "BKA Pipeline Spool Repair on Board Crest Odessey-2"
+                image: "{{ url('build/img/project_img/VOClient/boster.png') }}",
+                name: "Boster Engineering Sdn. Bhd.",
+                year: "2023",
+                desc: "Rental of LRUT 8\" Collar"
             },
             {
                 id: 7,
-                image: "{{ url('build/img/project_img/Collaborators/Velosi-logo.jpg') }}",
-                name: "Velosi Specialised Inspection Sdn Bhd",
-                year: "2015",
-                desc: "Provision of Radiography Testing at South Angsi Platform"
+                image: "{{ url('build/img/project_img/VOClient/winner.png') }}",
+                name: "Winner Inspection Sdn. Bhd.",
+                year: "2023",
+                desc: "Rental of Eddyfi  Lyft PEC Equipment"
             },
             {
                 id: 8,
-                image: "{{ url('build/img/project_img/Collaborators/DANAMIN-LOGO.png') }}",
-                name: "Danamin (M) Sdn Bhd",
-                year: "2015",
-                desc: "Perform Cscan Inspection at Petron Port Dickson"
+                image: "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                name: "FPSO Ventures Sdn. Bhd.",
+                year: "2023",
+                desc: "Provision of Manpower, Materials, Equipment, Tools and consumable for Cleaning, Inspection and Repair of Topsides Process Pressure Vessel (PPV) and Heat Exchanger (HEX) onboard FPSO Bunga Kertas"
             },
             {
                 id: 9,
-                image: "{{ url('build/img/project_img/Collaborators/NadiMarine.png') }}",
-                name: "Nadi Marine Sdn Bhd",
-                year: "2015",
-                desc: "Perform MPI Inspection at Perisai Pacific 101"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2023",
+                desc: "Conventional Eddy Current Testing Method on PCSB Platform"
             },
             {
                 id: 10,
-                image: "{{ url('build/img/project_img/Collaborators/ndeLogo.png') }}",
-                name: "NDE Consultancy Services Sdn Bhd",
-                year: "2014",
-                desc: "Perform Cscan at PGB Kerteh"
+                image: "{{ url('build/img/project_img/VOClient/rosen.png') }}",
+                name: "H.Rosen Engineering (M) Sdn. Bhd.",
+                year: "2023",
+                desc: "Rental of Long Range Ultrasonic Testing (LRUT) Equipment c/w Assistant Operator"
             },
             {
                 id: 11,
-                image: "{{ url('build/img/project_img/Collaborators/bumitech-global-logo.png') }}",
-                name: "Bumitech Inspection Sdn Bhd",
-                year: "2014",
-                desc: "Perforn LRUT at PDB Sepangar Sabah"
+                image: "{{ url('build/img/project_img/VOClient/profieins.png') }}",
+                name: "Proficient Inspection Sdn. Bhd.",
+                year: "2022",
+                desc: "Rental of Eddyfi  Lyft PEC Equipment"
             },
             {
                 id: 12,
-                image: "{{ url('build/img/project_img/Collaborators/TITAN PETCHEM.png') }}",
-                name: "Lotte Chemical Titan (M) Sdn Bhd",
-                year: "2014",
-                desc: "Boroscope Inspection"
+                image: "{{ url('build/img/project_img/VOClient/infiins.png') }}",
+                name: "Infinite Inspection (M) Sdn. Bhd.",
+                year: "2022",
+                desc: "Rental of Omniscan MX2"
             },
             {
                 id: 13,
-                image: "{{ url('build/img/project_img/Collaborators/cropped-pesb4.png') }}",
-                name: "Pioneer Engineering Sdn Bhd",
-                year: "2014",
-                desc: "Provision of Mechanical Integrity Assessment at PDB Bintulu Terminal"
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "PT MPL Jasa Lestari",
+                year: "2022",
+                desc: "Developing Non-Destructive Testing Procedure For Testing & Commissioning"
             },
             {
                 id: 14,
-                image: "{{ url('build/img/project_img/Collaborators/rosen group logo_1.jpg') }}",
-                name: "ROSEN Inspection Asia Pacific S/B",
-                year: "2014",
-                desc: "Test Loop Assembly and Test Run Assistance"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2022",
+                desc: "To Perform PAUT Inspection for Vessel V-130 in PM9 Tiong A Platform"
             },
             {
                 id: 15,
-                image: "{{ url('build/img/project_img/Collaborators/TITAN PETCHEM.png') }}",
-                name: "Lotte Chemical Titan (M) Sdn Bhd",
-                year: "2014",
-                desc: "NDT Inspection Storage Tank"
+                image: "{{ url('build/img/project_img/VOClient/petra.png') }}",
+                name: "Petra Resources Sdn. Bhd.",
+                year: "2022",
+                desc: "To Perform Ultrasonic Testing Gauging (UTTG) Services for Newly Installed Piping (1st Mob) - Quaratine Claim"
             },
             {
                 id: 16,
-                image: "{{ url('build/img/project_img/Collaborators/IOS.png') }}",
-                name: "Innovative Oilfield Services",
-                year: "2014",
-                desc: "Perform Marine Growth Preventor removal via rope access"
+                image: "{{ url('build/img/project_img/VOClient/ewf.png') }}",
+                name: "Energy Workforce Group",
+                year: "2022",
+                desc: "PEC Inspection  & IRATA Service for Spherical Tank at TITAN Pasir Gudang"
             },
             {
                 id: 17,
-                image: "{{ url('build/img/project_img/Collaborators/NadiMarine.png') }}",
-                name: "Nadi Marine Sdn Bhd",
-                year: "2014",
-                desc: "Price Agreement (PA) of Inspection Services for Product Tanks, Pressure Vessel and Piping at PDB Terminal (Eastern & Central)"
+                image: "{{ url('build/img/project_img/VOClient/boster.png') }}",
+                name: "Boster Engineering Sdn. Bhd.",
+                year: "2022",
+                desc: "Long-Range UT with Non-IRATA Technicians for Onshore Jobs at Kertih Terminal"
             },
             {
                 id: 18,
-                image: "{{ url('build/img/project_img/Collaborators/Logo-Petronas-Dagangan-Berhad.png') }}",
-                name: "Petronas Dagangan Berhad",
-                year: "2014",
-                desc: "Price Agreement (PA) of Inspection Services for Product Tanks, Pressure Vessel and Piping at PDB Terminal (Eastern & Central)"
+                image: "{{ url('build/img/project_img/VOClient/AriseGlobal.jpg') }}",
+                name: "Arise Star Sdn. Bhd.",
+                year: "2021",
+                desc: "* Rental of LRUT Equipment \n* Rental of Omniscan MX2 \n* Rental of LRUT Equipment"
             },
             {
                 id: 19,
-                image: "{{ url('build/img/project_img/Collaborators/Logo-Petronas-Dagangan-Berhad.png') }}",
-                name: "Petronas Dagangan Berhad",
-                year: "2014",
-                desc: "NDT Services - KLIA Fuel Terminal"
+                image: "{{ url('build/img/project_img/VOClient/gtisb.png') }}",
+                name: "Group Technical Inspection (GTI) Sdn. Bhd.",
+                year: "2021",
+                desc: "Provision of Pulsed Eddy Current Testing (PECT) for Sphere Tank Lower Column Fie Proofing at Pengerang Terminal Two"
             },
             {
                 id: 20,
-                image: "{{ url('build/img/project_img/Collaborators/Logo-Petronas-Dagangan-Berhad.png') }}",
-                name: "Petronas Dagangan Berhad",
-                year: "2014",
-                desc: "Pipeline Integrity Test And Inspection"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2021",
+                desc: "Eddy Current Array (ECA) for Jacket Structure (near base plate) to Identify and size the propogation of suspected crack"
             },
             {
                 id: 21,
-                image: "{{ url('build/img/project_img/Collaborators/Logo-Petronas-Dagangan-Berhad.png') }}",
-                name: "Petronas Dagangan Berhad",
-                year: "2014",
-                desc: "Tank Integrity Inspection"
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Talent Management International Company Limited",
+                year: "2021",
+                desc: "Sulawesi Selatan (Sulsel) Barru-2 - NDT Procedure"
             },
             {
                 id: 22,
-                image: "{{ url('build/img/project_img/Collaborators/Logo-Petronas-Dagangan-Berhad.png') }}",
-                name: "Petronas Dagangan Berhad",
-                year: "2014",
-                desc: "Tank Inspection - Langkawi Fuel Terminal"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2021",
+                desc: "* Pulsed Eddy Current Testing (PECT) for Enquest Riser Inspection at Seligi D \n* Long Range Ultrasonic Testing (LRUT) for Enquest Riser Inspection at Seligi D \n* Eddy Current Weldment Scanning at Tangga Barat Platform"
             },
             {
                 id: 23,
-                image: "{{ url('build/img/project_img/Collaborators/Velosi-logo.jpg') }}",
-                name: "Velosi Specialised Inspection S/B",
-                year: "2014",
-                desc: "Provision of Radiography Testing - PM3S - BRA"
+                image: "{{ url('build/img/project_img/VOClient/reliacraft.png') }}",
+                name: "Reliacraft Engineering Sdn. Bhd.",
+                year: "2020",
+                desc: "Provision of Pulsed Eddy Current Testing (PECT) For Pressure Vessel Inspection at : \n* Cendor\n* West Desaru - MOPU"
             },
             {
                 id: 24,
-                image: "{{ url('build/img/project_img/Collaborators/murphyoil.png') }}",
-                name: "Murphy Oil",
-                year: "2013",
-                desc: "Advance NDT. Provision for PAUT LRUT C-Scan Inspection for SEP-A GOP-A/B BORF and KIKEH"
+                image: "{{ url('build/img/project_img/VOClient/profieins.png') }}",
+                name: "Proficient Inspection Services Co., Ltd.",
+                year: "2020",
+                desc: "Rental of Eddyfi  Lyft PEC"
             },
             {
                 id: 25,
-                image: "{{ url('build/img/project_img/Collaborators/Talisman[1].png') }}",
-                name: "Talisman Malaysia Limited",
-                year: "2013",
-                desc: "NDT Services"
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2020",
+                desc: "Neutron Backscatter for HESS"
             },
             {
                 id: 26,
-                image: "{{ url('build/img/project_img/Collaborators/NadiMarine.png') }}",
-                name: "//Titan Petchem",
-                year: "2013",
-                desc: "Piping Inspection via Rope Access"
+                image: "{{ url('build/img/project_img/VOClient/nde.png') }}",
+                name: "NDE Consultancy Services Sdn. Bhd.",
+                year: "2020",
+                desc: "Rental of Isonic 2006 "
             },
             {
                 id: 27,
-                image: "{{ url('build/img/project_img/Collaborators/NadiMarine.png') }}",
-                name: "//Talisman - PESB",
-                year: "2013",
-                desc: "Pressure Vessels Piping Inspection via Rope Access "
+                image: "{{ url('build/img/project_img/VOClient/petra.png') }}",
+                name: "Petra Resouces Sdn. Bhd.",
+                year: "2020",
+                desc: "To Perform Ultrasonic Testing Gauging (UTTG) Services for Newly Installed Piping "
+            },
+            {
+                id: 28,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* PEC Lyft Inspection \n* Piping Insulated and Non Insulated Inspection Campaign\n* Provision of Manpower and Equipment for Acoustic Emission Testing (AET)"
+            },
+            {
+                id: 29,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* Visual Inspection and NDT ACFM On Helideck Structure Via Rope Access\n* Piping (PAUT / UT) - Onshore"
+            },
+            {
+                id: 30,
+                image: "{{ url('build/img/project_img/VOClient/insptechsol.png') }}",
+                name: "Inspection Technical Solution Sdn. Bhd.",
+                year: "2019",
+                desc: "NDT On Furnace Front Wall Riser "
+            },
+            {
+                id: 31,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "WHP Topside Piping Inspection Hydrocarbon Insulated & Non-Insulated Pipin - Visual Inspection and NDT PEC and UTTM On Insulated Piping Via Rope Access"
+            },
+            {
+                id: 32,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* COT 4C NDT and Inspection - ECA Testing Inspection On Cargo Oil Tank Via Rope Access\n* AET On Valves In Piping Room - Acoustic Emission Testing (AET) On Valve In Pump Room"
+            },
+            {
+                id: 33,
+                image: "{{ url('build/img/project_img/VOClient/riasolu.png') }}",
+                name: "Ria Solutions (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "Pulsed Eddy Current (PEC) Inspection On Riser - DTU-SPAR KIKEH"
+            },
+            {
+                id: 34,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "Tube Inspection On Boiler Evaporator Bank - Vacuum Leak Test, RFET and Video Scope At Port Side Boiler & Starboard Boiler Evaporator Bank"
+            },
+            {
+                id: 35,
+                image: "{{ url('build/img/project_img/VOClient/amaniaga.png') }}",
+                name: "Amaniaga Resources (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "Partial Retubing of Auxiliary Condenser 2018/010795 WSR - Retube Auxiliary Condenser"
+            },
+            {
+                id: 36,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* COT 4C NDT and Inspection - UTTM Inspection In Cargo Oil Tank 4 Center\n* Forward Water Ballast  and Inspection - ACFM Testing Inspection On Forward Water Ballast Via Rope Access"
+            },
+            {
+                id: 37,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* Crane Structure and Inspection - ECA & UTTM Inspection On FPSO Via Rope Access\n* ECT On Pad Eye Boiler Via Rope Access"
+            },
+            {
+                id: 38,
+                image: "{{ url('build/img/project_img/VOClient/profieins.png') }}",
+                name: "Proficient Inspection Services Co., Ltd.",
+                year: "2019",
+                desc: "Rental of Eddyfi  Lyft PEC"
+            },
+            {
+                id: 39,
+                image: "{{ url('build/img/project_img/VOClient/nadimaarine.png') }}",
+                name: "Nadi Marine Sdn. Bhd.",
+                year: "2019",
+                desc: "Manpower Supply for Subsea ACFM Operator / Interpreter"
+            },
+            {
+                id: 40,
+                image: "{{ url('build/img/project_img/VOClient/riasolu.png') }}",
+                name: "Ria Solutions (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "Pulsed Eddy Current (PEC) Inspection On Riser - Bintulu Offshore"
+            },
+            {
+                id: 41,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "ECT On Lifting Pad Eye at Wellhead Platform & Engine Room"
+            },
+            {
+                id: 42,
+                image: "{{ url('build/img/project_img/VOClient/kmz-energy.png') }}",
+                name: "KMZ Energy",
+                year: "2019",
+                desc: "Pulsed Eddy Current (PEC) Mock Up - Terengganu Crude Oil Terminal"
+            },
+            {
+                id: 43,
+                image: "{{ url('build/img/project_img/VOClient/Applus_Logo.png') }}",
+                name: "Applus Malaysia Sdn. Bhd.",
+                year: "2019",
+                desc: "Rental of Isonic 2006"
+            },
+            {
+                id: 44,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2019",
+                desc: "* COT 4C NDT and Inspection - PAUT and ACFM Inspection In Cargo Oil Tank 4 Center\n* PEC Mockup for Tank Top & Sea Chest Corrosion Survey"
+            },
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
+                name: "Velosi (M) Sdn. Bhd.",
+                year: "2020",
+                desc: "* Sepat ECA Inspection Campaign\n* Eddy Current Array At Crane Boom (Tiong Platform)"
+            },
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/hijraoi.jpg') }}",
+                name: "Hijra Oil & Gas Sdn. Bhd.",
+                year: "2019",
+                desc: "Phonon PEC Inspection at Kerteh"
+            },
+
+            
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/hijraoi.jpg') }}",
+                name: "Hijra Oil & Gas Sdn. Bhd.",
+                year: "2018",
+                desc: "Phonon PEC Inspection at Kerteh"
+            },
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/hijraoi.jpg') }}",
+                name: "Hijra Oil & Gas Sdn. Bhd.",
+                year: "2018",
+                desc: "Phonon PEC Inspection at Kerteh"
+            },
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/hijraoi.jpg') }}",
+                name: "Hijra Oil & Gas Sdn. Bhd.",
+                year: "2018",
+                desc: "Phonon PEC Inspection at Kerteh"
             }
         ], elementsPerSubArray);
 
