@@ -208,12 +208,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -65px;
+    margin-top: -35px;
     z-index: 10;
 }
 
 .timeline .item .circle {
-    height: 130px;
+    height: 80px;
     width: 150px;
     display: flex;
     justify-content: center;
