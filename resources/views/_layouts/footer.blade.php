@@ -13,7 +13,7 @@
                     &copy; <a href="#">Vision One Sdn. Bhd.</a>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-0" style="color: white; text-align:center;  margin-top:-5px;">
-                    All Right Reserved.
+                    All Rights Reserved.
                 </div>
                 <!-- <div class="col-md-4 text-center space-between text-md-end">
                     <div class="social-media">

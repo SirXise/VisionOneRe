@@ -1145,7 +1145,70 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1440px) {
+
+    .hero .text-overlay2 {
+        top: 30%;
+        width: 40%;
+    }
+
+    .text-overlay2 h2 {
+        font-size: 2.8rem !important;
+    }
+
+    .text-overlay2 .highlight {
+        font-size: 3.2rem !important;
+    }
+
+    .text-overlay2 p {
+        font-size: 1rem !important;
+        text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.5); 
+    }
+
+    .ndt-card-desc{
+        height: 70%;
+    }
+
+    .ndt-card-description {
+        font-size: 0.9rem !important;
+    }
+
+    .card{
+        width: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .cards-wrapper {
+        padding: 20px 45px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Prevent vertical scrolling */
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cards-wrapper::-webkit-scrollbar {
+        height: 8px; /* Adjust the height of the scrollbar */
+    }
+
+    .cards-wrapper::-webkit-scrollbar-thumb {
+        background-color: #888; /* Color of the scrollbar thumb */
+        border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+    }
+
+    .cards-wrapper::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Color when hovering over the scrollbar thumb */
+    }
+
+    /* Optional: Hide scrollbar for non-WebKit browsers */
+    .cards-wrapper {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
 
     .hero {
         height: 70vh;
@@ -1260,7 +1323,7 @@
         /* Automatic row placement */
         width: 100%;
         /* Full width */
-        height: 42vh;
+        height: 50vh;
         /* Adjust height as needed */
     }
 
@@ -1423,7 +1486,7 @@
     }
 
     .ndt-card {
-        height: 42vh;
+        height: 47vh;
         /* Adjust height as needed */
     }
 
