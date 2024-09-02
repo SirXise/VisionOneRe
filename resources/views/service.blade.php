@@ -126,7 +126,7 @@
 
     <section class="inspection-container">
         <div class="ndt-card-first">
-            <video class="ndt-background-video" autoplay muted loop>
+            <video class="ndt-background-video" autoplay loop muted playsinline>
                 <source src="{{ url('build/img/service_img/NDT_video.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -239,7 +239,7 @@
                         </li>
                         <li style="--ol-cards-color-accent:#72BECB">
                             <div class="step"><i class="fas fa-x-ray"></i></div> <!-- Computerized Radiography Testing -->
-                            <div class="title">Computerized Radiography Testing</div>
+                            <div class="title">Computed Radiography Testing</div>
                             <div class="content">In Computed Radiography, imaging plates exposed to X-rays or gamma rays retain the incoming radiation energy within a distinctive phosphor layer. This latent image is subsequently revealed by a specialized device, known as a scanner, which employs a precisely focused laser beam to stimulate and read the stored image from the plate.</div>
                         </li>
                         <li style="--ol-cards-color-accent:#5AACBF">
