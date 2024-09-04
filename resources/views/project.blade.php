@@ -142,7 +142,7 @@
                 image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
                 name: "Velosi (M) Sdn. Bhd.",
                 year: "2024",
-                desc: "Manpower Supply NDT Rope Access UT to Perform UT With Abseiling AT PM3 South"
+                desc: "Manpower Supply NDT Rope Access UT to Perform UT With Abseiling at PM3 South"
             },
             {
                 id: 2,
@@ -595,7 +595,7 @@
             {
                 id: 66,
                 image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
-                name: "Appluss Velosi Malaysia Sdn. Bhd.",
+                name: "Applus Velosi Malaysia Sdn. Bhd.",
                 year: "2018",
                 desc: "Provision of Manpower and Equipment for PECT Inspection at BORF"
             },
