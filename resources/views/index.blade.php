@@ -8,12 +8,14 @@
 
 @section('body')
 <div class="hero">
-    <video autoplay loop muted plays-inline class="back-video" id="main_landing">
+    <video autoplay loop muted playsinline class="back-video" id="main_landing">
         <source src="{{ url('build/img/index_img/landing_video_main.mp4') }}" type="video/mp4">
     </video>
-    <video autoplay loop muted plays-inline class="back-video" id="mobile_landing" style="display: none;">
+
+    <video autoplay loop muted playsinline class="back-video" id="mobile_landing" style="display: none;">
         <source src="{{ url('build/img/index_img/landing_video_secondary.mp4') }}" type="video/mp4">
     </video>
+
     <div class="overlay-gradient"></div>
     <div class="text-overlay">
         <div class="header-content-container">
@@ -35,7 +37,7 @@
 
         <div class="custom-row">
             <div class="custom-column">
-                <h3>Speciality Expertise</h3>
+                <h3 class="speciality-expertise">Speciality Expertise</h3>
                 <ul>
                     <li><i class="bi bi-tools"></i> Tailored Technical Solutions</li>
                     <li><i class="bi bi-search"></i> Advanced Inspection and Nondestructive Testing</li>
@@ -333,6 +335,12 @@
                             <img class="collaborator-image" src="{{ url('build/img/clientsNoBg/ALAM HIDRO (M) SDN BHD.png') }}" alt="Image">
                         </a>
                         <a>
+                            <img class="collaborator-image" src="{{ url('build/img/clientsNoBg/SESB.png') }}" alt="Image">
+                        </a>
+                        <a>
+                            <img class="collaborator-image" src="{{ url('build/img/clientsNoBg/Nuri Cerah.png') }}" alt="Image">
+                        </a>
+                        <a>
                             <img class="collaborator-image" src="{{ url('build/img/clientsNoBg/ARISE.png') }}" alt="Image">
                         </a>
                         <a>
@@ -526,26 +534,25 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-    function updateVideo() {
-        const mainLandingVideo = document.getElementById('main_landing');
-        const mobileLandingVideo = document.getElementById('mobile_landing');
+        function updateVideo() {
+            const mainLandingVideo = document.getElementById('main_landing');
+            const mobileLandingVideo = document.getElementById('mobile_landing');
 
-        if (window.innerWidth <= 900) {
-            mainLandingVideo.style.display = 'none';
-            mobileLandingVideo.style.display = 'block';
-        } else {
-            mainLandingVideo.style.display = 'block';
-            mobileLandingVideo.style.display = 'none';
+            if (window.innerWidth <= 900) {
+                mainLandingVideo.style.display = 'none';
+                mobileLandingVideo.style.display = 'block';
+            } else {
+                mainLandingVideo.style.display = 'block';
+                mobileLandingVideo.style.display = 'none';
+            }
         }
-    }
 
-    // Initial check
-    updateVideo();
+        // Initial check
+        updateVideo();
 
-    // Update on window resize
-    window.addEventListener('resize', updateVideo);
-});
-
+        // Update on window resize
+        window.addEventListener('resize', updateVideo);
+    });
 </script>
 
 <script>

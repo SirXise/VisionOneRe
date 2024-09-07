@@ -414,6 +414,37 @@
     top: 0;
 }
 
+@media only screen and (max-width: 1440px) {
+
+    .hero .text-overlay2 {
+        top: 30%;
+        width: 40%;
+    }
+
+    .text-overlay2 h2 {
+        font-size: 2.8rem !important;
+    }
+
+    .text-overlay2 .highlight {
+        font-size: 3.2rem !important;
+    }
+
+    .text-overlay2 p {
+        font-size: 1rem !important;
+        text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.5); 
+    }
+
+    .ndt-card-desc{
+        height: 70%;
+    }
+
+    .ndt-card-description {
+        font-size: 0.9rem !important;
+    }
+
+}
+
+
 @media only screen and (max-width: 900px) {
 
     .hero {
