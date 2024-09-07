@@ -142,7 +142,7 @@
                 image: "{{ url('build/img/project_img/VOClient/Velosi.jpg') }}",
                 name: "Velosi (M) Sdn. Bhd.",
                 year: "2024",
-                desc: "Manpower Supply NDT Rope Access UT to Perform UT With Abseiling AT PM3 South"
+                desc: "Manpower Supply NDT Rope Access UT to Perform UT With Abseiling at PM3 South"
             },
             {
                 id: 2,
@@ -595,7 +595,7 @@
             {
                 id: 66,
                 image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
-                name: "Appluss Velosi Malaysia Sdn. Bhd.",
+                name: "Applus Velosi Malaysia Sdn. Bhd.",
                 year: "2018",
                 desc: "Provision of Manpower and Equipment for PECT Inspection at BORF"
             },
@@ -808,6 +808,566 @@
                 name: "Eastbay Frontier Sdn. Bhd.",
                 year: "2017",
                 desc: "Advanced NDT Inspection - Phased Array UT (PAUT)- Murphy FPSO Kikeh"
+            },
+            {
+                "id": 97,
+                "image": "{{ url('build/img/project_img/VOClient/magnamitre.png') }}",
+                "name": "Magna-Mitre Sdn. Bhd.",
+                "year": "2015 - 2017",
+                "desc": "Provision of Integrity Assessment, Inspection and Disposal Schedule Waste of Continuously Oil Contaminated (COC), Accidentally Oil Contaminated (AOC) System in Petronas LNG Complex"
+            },
+            {
+                id: 98,
+                image: "{{ url('build/img/project_img/VOClient/sgs-malaysia.png') }}",
+                name: "SGS Malaysia Sdn. Bhd.",
+                year: "2015",
+                desc: "Heating Coil Inspection NDT at Bertam FPSO"
+            },
+            {
+                "id": 99,
+                "image": "{{ url('build/img/project_img/VOClient/budimaninsp.jpg') }}",
+                "name": "Budiman Inspection Sdn. Bhd.",
+                "year": "2015",
+                "desc": "LRUT Inspection for 12\" piping GAF System (TNB Manjung)"
+            },
+            {
+                "id": 100,
+                "image": "{{ url('build/img/project_img/VOClient/ime-1.png') }}",
+                "name": "IME Sdn. Bhd.",
+                "year": "2015",
+                "desc": "Rope Access Team for PFPSO - West Desaru Mopu and Cendor Platform"
+            },
+            {
+                "id": 101,
+                "image": "{{ url('build/img/project_img/VOClient/Talisman[1].png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2015",
+                "desc": "Spray Pig Loop Test"
+            },
+            {
+                "id": 103,
+                "image": "{{ url('build/img/project_img/VOClient/almhiro.png') }}",
+                "name": "Alam Hidro (M) Sdn. Bhd.",
+                "year": "2015",
+                "desc": "BKA Pipeline Spool Repair on Board Crest Odessey-2"
+            },
+            {
+                "id": 104,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Velosi Specialised Inspection Sdn. Bhd.",
+                "year": "2015",
+                "desc": "Provision of Radiography Testing at South Angsi Platform"
+            },
+            {
+                "id": 105,
+                "image": "{{ url('build/img/project_img/VOClient/danamin.png') }}",
+                "name": "Danamin (M) Sdn. Bhd.",
+                "year": "2015",
+                "desc": "Perform C-Scan Inspection at Petron Port Dickson"
+            },
+            {
+                "id": 106,
+                "image": "{{ url('build/img/project_img/VOClient/nadimaarine.png') }}",
+                "name": "Nadi Marine Sdn. Bhd.",
+                "year": "2015",
+                "desc": "Perform MPI Inspection at Perisai Pacific 101"
+            },
+            {
+                "id": 107,
+                "image": "{{ url('build/img/project_img/VOClient/nde.png') }}",
+                "name": "NDE Consultancy Services Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Perform C-Scan at PGB Kerteh"
+            },
+            {
+                "id": 108,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Bumitech Inspection Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Perform LRUT at PDB Sepangar Sabah"
+            },
+            {
+                "id": 109,
+                "image": "{{ url('build/img/project_img/VOClient/lottechemic.png') }}",
+                "name": "Lotte Chemical Titan (M) Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Boroscope Inspection"
+            },
+            {
+                "id": 110,
+                "image": "{{ url('build/img/project_img/VOClient/pioneereng.png') }}",
+                "name": "Pioneer Engineering Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Provision of Mechanical Integrity Assessment at PDB Bintulu Terminal"
+            },
+            {
+                "id": 111,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "ROSEN Inspection Asia Pacific Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Test Loop Assembly and Test Run Assistance"
+            },
+            {
+                "id": 112,
+                "image": "{{ url('build/img/project_img/VOClient/lottechemic.png') }}",
+                "name": "Lotte Chemical Titan (M) Sdn. Bhd.",
+                "year": "2014",
+                "desc": "NDT Inspection Storage Tank"
+            },
+            {
+                "id": 113,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Innovative Oilfield Services",
+                "year": "2014",
+                "desc": "Perform Marine Growth Preventor removal via rope access"
+            },
+            {
+                "id": 114,
+                "image": "{{ url('build/img/project_img/VOClient/nadimaarine.png') }}",
+                "name": "Nadi Marine Sdn. Bhd.",
+                "year": "2014",
+                "desc": "MPI Job at Tanjung Pelepas"
+            },
+            {
+                "id": 115,
+                "image": "{{ url('build/img/project_img/VOClient/Petronas-Dagangan-Berhad.png') }}",
+                "name": "Petronas Dagangan Berhad",
+                "year": "2014",
+                "desc": "Price Agreement (PA) of Inspection Services for Product Tanks, Pressure Vessel and Piping at PDB Terminal (Eastern & Central)"
+            },
+            {
+                "id": 116,
+                "image": "{{ url('build/img/project_img/VOClient/Petronas-Dagangan-Berhad.png') }}",
+                "name": "Petronas Dagangan Berhad",
+                "year": "2014",
+                "desc": "* NDT Services - KLIA Fuel Terminal\n* Pipeline Integrity Test And Inspection\n* Tank Integrity Inspection"
+            },
+            {
+                "id": 119,
+                "image": "{{ url('build/img/project_img/VOClient/Petronas-Dagangan-Berhad.png') }}",
+                "name": "Petronas Dagangan Berhad",
+                "year": "2014",
+                "desc": "Tank Inspection - Langkawi Fuel Terminal"
+            },
+            {
+                "id": 120,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Velosi Specialised Inspection Sdn. Bhd.",
+                "year": "2014",
+                "desc": "Provision of Radiography Testing - PM3S - BRA"
+            },
+            {
+                "id": 121,
+                "image": "{{ url('build/img/project_img/VOClient/murphyoil.png') }}",
+                "name": "Murphy Oil",
+                "year": "2013",
+                "desc": "Advance NDT. Provision for PAUT LRUT C-Scan Inspection for SEP-A GOP-A/B BORF and KIKEH"
+            },
+            {
+                "id": 122,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2013",
+                "desc": "NDT Services"
+            },
+            {
+                "id": 123,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Titan Petchem",
+                "year": "2013",
+                "desc": "Piping Inspection via Rope Access"
+            },
+            {
+                "id": 124,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Talisman - PESB",
+                "year": "2013",
+                "desc": "* Pressure Vessels Piping Inspection via Rope Access\n* Cooler Inspection"
+            },
+            {
+                "id": 126,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Petronas Polly Etheylene - PESB",
+                "year": "2013",
+                "desc": "Advance NDT"
+            },
+            {
+                "id": 132,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Murphy Oil Corp (Sarawak)",
+                "year": "2011 - 2013",
+                "desc": "Price Agreements NDT Services"
+            },
+            {
+                "id": 133,
+                "image": "{{ url('build/img/project_img/VOClient/petronagasberhad.png') }}",
+                "name": "Petronas Gas Berhad",
+                "year": "2011 - 2013",
+                "desc": "LRUT Inspection and Coating Repair for PGU Metering Station"
+            },
+            {
+                "id": 127,
+                "image": "{{ url('build/img/project_img/VOClient/jowahaki.png') }}",
+                "name": "Johawaki Sdn. Bhd.",
+                "year": "2013",
+                "desc": "Forensic Testing - NDT / Concrete Inspection at Hospital Besar Kuala Lumpur"
+            },
+            {
+                "id": 128,
+                "image": "{{ url('build/img/project_img/VOClient/gpile.jpg') }}",
+                "name": "G-Pile",
+                "year": "2013",
+                "desc": "NDT Services"
+            },
+            {
+                "id": 129,
+                "image": "{{ url('build/img/project_img/VOClient/petronas-penapisan-melaka.jpg') }}",
+                "name": "Petronas Penapisan Melaka",
+                "year": "2012",
+                "desc": "Tank Inspection via Rope Access"
+            },
+            {
+                "id": 130,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Huntsman Tioxide",
+                "year": "2012",
+                "desc": "LRUT - Piping Inspection"
+            },
+            {
+                "id": 131,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "TWI",
+                "year": "2012",
+                "desc": "NDT Services - UUTM"
+            },
+            {
+                "id": 134,
+                "image": "{{ url('build/img/project_img/VOClient/pioneereng.png') }}",
+                "name": "Pioneer Engineering Sdn. Bhd.",
+                "year": "2011",
+                "desc": "Phase Array Inspection for HX at Talisman South Angsi"
+            },
+            {
+                "id": 135,
+                "image": "{{ url('build/img/project_img/VOClient/NRS.png') }}",
+                "name": "NRS Associates",
+                "year": "2011",
+                "desc": "Structure and Assessment Integrity at TNB Kg. Limau"
+            },
+            {
+                "id": 136,
+                "image": "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                "name": "FPSO Ventures Sdn. Bhd.",
+                "year": "2011",
+                "desc": "Flare Tip Inspection"
+            },
+            {
+                "id": 137,
+                "image": "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                "name": "FPSO Ventures Sdn. Bhd.",
+                "year": "2011",
+                "desc": "Vessel & Piping Integrity Assessment at FPSO Bunga Kertas"
+            },
+            {
+                "id": 138,
+                "image": "{{ url('build/img/project_img/VOClient/oceancare.jpg') }}",
+                "name": "OceanCare Sdn. Bhd.",
+                "year": "2011",
+                "desc": "Eddy Current Testing on Cross Arm at Murphy Labuan Warehouse"
+            },
+            {
+                "id": 139,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Huntsman Tioxide",
+                "year": "2011",
+                "desc": "Annual Shutdown - Inspection of Vessels and Piping (Advance NDT - LRUT)"
+            },
+            {
+                "id": 140,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "GPP - NDE Consultancy",
+                "year": "2011",
+                "desc": "Advance NDT"
+            },
+            {
+                "id": 141,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "FPSO Ventures Sdn. Bhd.",
+                "year": "2011",
+                "desc": "Load Test & MPI on Cargo Handling Equipment"
+            },
+            {
+                "id": 142,
+                "image": "{{ url('build/img/project_img/VOClient/petronas_carigali_0.png') }}",
+                "name": "Petronas Carigali Sdn. Bhd.",
+                "year": "2010 - 2011",
+                "desc": "Provision of heat exchanger inspection and specialist services, Petronas Carigali Sdn. Bhd., Peninsular Malaysia Operations (PMO)"
+            },
+            {
+                "id": 142,
+                "image": "{{ url('build/img/project_img/VOClient/oceancare.jpg') }}",
+                "name": "OceanCare Sdn. Bhd.",
+                "year": "2011",
+                "desc": "PAUT Inspection on Flowline at Murphy Oil Golok Platform"
+            },
+            {
+                "id": 143,
+                "image": "{{ url('build/img/project_img/VOClient/oceancare.jpg') }}",
+                "name": "OceanCare Sdn. Bhd.",
+                "year": "2011",
+                "desc": "PAUT Inspection on Riser at Murphy Oil Golok Platform"
+            },
+            {
+                "id": 144,
+                "image": "{{ url('build/img/project_img/VOClient/careiontech.jpg') }}",
+                "name": "Careion Technologist Sdn. Bhd.",
+                "year": "2011",
+                "desc": "* C-Scan at Kumang Cluster Onshore MLNG2 for Petra Resources\n* C-Scan at Diesel Storage Tank BCOT Bintulu for Lutong Brothers"
+            },
+            {
+                "id": 146,
+                "image": "{{ url('build/img/project_img/VOClient/careiontech.jpg') }}",
+                "name": "Careion Technologist Sdn. Bhd.",
+                "year": "2011",
+                "desc": "* B-Scan on Tank at KSB for Schlumberger\n* Sulfur Storage Tank Inspection for Flexsys\n* Abi Scan & ECT via Rope Access at Chendor MOPU"
+            },
+            {
+                "id": 149,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Careion Technologist – Petronas LPG",
+                "year": "2010",
+                "desc": "UTTM for sphere Tank using Rope Access at LPG Klang"
+            },
+            {
+                "id": 150,
+                "image": "{{ url('build/img/project_img/VOClient/Talisman[1].png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2009",
+                "desc": "BRE MEMGUARD PRESSURE VESSEL - External Visual Inspection, Thermography and 100% UT TOFD"
+            },
+            {
+                "id": 151,
+                "image": "{{ url('build/img/project_img/VOClient/JX_Nippon7.jpg') }}",
+                "name": "Nippon Oil Exploration (Malaysia) Ltd.",
+                "year": "2009",
+                "desc": "Provision of Interim Inspection Services for Nippon’s Onshore and Offshore Activities"
+            },
+            {
+                "id": 152,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "M3Nergy FPSO Perintis Sdn. Bhd.",
+                "year": "2009",
+                "desc": "CARGO OIL TANK (COT) 4 & 6 CENTRE - ROPE ACCESS CLOSE-UP SURVEY AND THICKNESS GAUGING"
+            },
+            {
+                "id": 152,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "M3Nergy FPSO Perintis Sdn. Bhd.",
+                "year": "2009",
+                "desc": "3rd Party Inspection and Expeditor for piping Fabrication"
+            },
+            {
+                "id": 153,
+                "image": "{{ url('build/img/project_img/VOClient/Talisman[1].png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2009",
+                "desc": "Rope Access Inspection Campaign – Process Piping for Gas Platform Bunga Raya Echo."
+            },
+            {
+                "id": 154,
+                "image": "{{ url('build/img/project_img/VOClient/Talisman[1].png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2009",
+                "desc": "Rope Access Inspection Campaign – Process Piping and Riser for PM3 Main Platform and 7 Satellite Platforms."
+            },
+            {
+                "id": 155,
+                "image": "{{ url('build/img/project_img/VOClient/optimalchem.jpg') }}",
+                "name": "Optimal Chemical Sdn. Bhd.",
+                "year": "2009",
+                "desc": "NDT Services for Heat Exchanger, Pressure Vessel & Fabrication Project – Shutdown Replacement Equipment."
+            },
+            {
+                "id": 156,
+                "image": "{{ url('build/img/project_img/VOClient/kertihtermin.png') }}",
+                "name": "Kerteh Terminal Sdn. Bhd.",
+                "year": "2009",
+                "desc": "Rope access integrity inspection – Provision of Ultrasonic Thickness measurement, visual inspection, corrosion mapping & acoustic emission testing on 3 units of Spherical Tanks."
+            },
+            {
+                "id": 157,
+                "image": "{{ url('build/img/project_img/VOClient/fpg-logo.png') }}",
+                "name": "FPG Oleochemical",
+                "year": "2008",
+                "desc": "Turnaround 2008 – Corrosion Monitoring B-Scan on 3 units Cooler."
+            },
+            {
+                "id": 158,
+                "image": "{{ url('build/img/project_img/VOClient/Talisman[1].png') }}",
+                "name": "Talisman Malaysia Limited",
+                "year": "2008",
+                "desc": "Rope Access Corrosion monitoring on flow lines for PM3 Satellite Platforms Bunga Raya Charlie and Bunga Raya Delta."
+            },
+            {
+                "id": 159,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Trenergy FPSO Sdn. Bhd.",
+                "year": "2008",
+                "desc": "Integrity Inspection – Statutory Equipment – UTTM, Visual inspection & Corrosion Monitoring CSCAN."
+            },
+            {
+                "id": 160,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "Trenergy FPSO Sdn. Bhd.",
+                "year": "2008",
+                "desc": "Integrity inspection – Process Piping Rope Access UTTM & Visual Inspection."
+            },
+            {
+                "id": 161,
+                "image": "{{ url('build/img/project_img/VOClient/perwaja_2.png') }}",
+                "name": "Perwaja Steel Sdn. Bhd.",
+                "year": "2008",
+                "desc": "NDT Services for Heat Exchanger Fabrication Project – Shutdown Replacement Equipment."
+            },
+            {
+                "id": 162,
+                "image": "{{ url('build/img/project_img/VOClient/logomakhostia.png') }}",
+                "name": "Makhostia Utilities Sdn. Bhd.",
+                "year": "2008",
+                "desc": "Corrosion Mapping on Pressure Vessel & NDT Eddy Current Tube Inspection for Condenser Unit Shutdown Job for GDC KLCC Plant"
+            },
+            {
+                "id": 163,
+                "image": "{{ url('build/img/project_img/VOClient/careiontech.jpg') }}",
+                "name": "Careion Technologist Malaysia Sdn. Bhd.",
+                "year": "2008",
+                "desc": "Rope Access Inspection and NDT on Jacket Leg and Flare Tower Piping at PM3 Field Talisman Malaysia Limited."
+            },
+            {
+                "id": 164,
+                "image": "{{ url('build/img/project_img/VOClient/intimulieng.jpg') }}",
+                "name": "INTISARI MULIA ENGINEERING Sdn. Bhd.",
+                "year": "2008",
+                "desc": "Corrosion mapping Ultrasonic C-Scan via Rope Access for South Angsi MOAB lines at SAA Field Talisman (M) Ltd."
+            },
+            {
+                "id": 165,
+                "image": "{{ url('build/img/project_img/VOClient/logomakhostia.png') }}",
+                "name": "Makhostia Utilities Sdn. Bhd.",
+                "year": "2007",
+                "desc": "Corrosion Mapping on Cooling Water Piping for GDC KLCC Plant."
+            },
+            {
+                "id": 166,
+                "image": "{{ url('build/img/project_img/VOClient/intimulieng.jpg') }}",
+                "name": "INTISARI MULIA ENGINEERING Sdn. Bhd.",
+                "year": "2007",
+                "desc": "Piping Integrity Inspection via Rope Access for PM3 Satellite Platforms at PM3 Field Talisman Malaysia Limited – Bunga Raya Alpha, Delta, Bravo, Bunga Kekwa Alpha, Charlie, Bunga Seroja Alpha & Bunga Tulip Alpha."
+            },
+            {
+                "id": 167,
+                "image": "{{ url('build/img/project_img/VOClient/careiontech.jpg') }}",
+                "name": "Careion Technologist Malaysia Sdn. Bhd.",
+                "year": "2007",
+                "desc": "LRUT on PM3 Export & Import Risers at PM3 Satelite platforms for Talisman (M) Ltd."
+            },
+            {
+                "id": 168,
+                "image": "{{ url('build/img/project_img/VOClient/intimulieng.jpg') }}",
+                "name": "INTISARI MULIA ENGINEERING Sdn. Bhd.",
+                "year": "2007",
+                "desc": "Corrosion mapping Ultrasonic C-Scan via Rope Access for Bunga Kekwa Satelite flow lines at PM3 Field Talisman (M) Ltd."
+            },
+            {
+                "id": 169,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "NDT PHILIPINES INSPECTION SERVICES CORPORATION",
+                "year": "2005",
+                "desc": "NDT Long Range Ultrasonic for Tank Farm Piping Corrosion Monitoring at Caltex Chevron Inc. Batangas Tank Farm, Philippines."
+            },
+            {
+                "id": 171,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "M3NERGY FPSO Sdn. Bhd.",
+                "year": "2004",
+                "desc": "On-stream Inspection and evaluation for Perintis FPSO process piping via Ultrasonic C-scan, Ultrasonic Thickness Gauging Measurement and Radiographic Profile for corrosion evaluation."
+            },
+            {
+                "id": 172,
+                "image": "{{ url('build/img/project_img/VOClient/tnec.png') }}",
+                "name": "TENAGA NASIONAL ENGINEERING & CONSTRUCTION (M) Sdn. Bhd.",
+                "year": "2004",
+                "desc": "Transfer of MPO at Prai Power Station."
+            },
+            {
+                "id": 173,
+                "image": "{{ url('build/img/project_img/VOClient/dnv.png') }}",
+                "name": "DET NORSKE VERITAS AS Sdn. Bhd.",
+                "year": "2001",
+                "desc": "Provision of Pressure Vessel Surveyor for Petronas Gas Receipt Gas Station Miri, Sarawak."
+            },
+            {
+                "id": 174,
+                "image": "{{ url('build/img/project_img/VOClient/toyoeng.png') }}",
+                "name": "TOYO ENGINEERING & CONSTRUCTION (M) Sdn. Bhd.",
+                "year": "2000 - 2001",
+                "desc": "Provision of project inspector for UPP Project in Fabrication of Statutory Equipment Fabrication."
+            },
+            {
+                "id": 175,
+                "image": "{{ url('build/img/project_img/VOClient/dnv.png') }}",
+                "name": "DET NORSKE VERITAS AS Sdn. Bhd.",
+                "year": "2000",
+                "desc": "Provision of project inspector for AMP2 Project."
+            },
+            {
+                "id": 176,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "BERKAT GLOBAL Sdn. Bhd.",
+                "year": "1999 - 2004",
+                "desc": "Marine Warranty Verification Services for Nippon Steel Construction."
+            },
+            {
+                "id": 177,
+                "image": "{{ url('build/img/project_img/VOClient/dnv.png') }}",
+                "name": "DET NORSKE VERITAS AS Sdn. Bhd.",
+                "year": "1999",
+                "desc": "Provision of Welding Inspector for Rig Trident 16, Miri Offshore Project."
+            },
+            {
+                "id": 178,
+                "image": "{{ url('build/img/project_img/VOClient/dnv.png') }}",
+                "name": "DET NORSKE VERITAS AS Sdn. Bhd.",
+                "year": "1999",
+                "desc": "Structural inspection for Skud Beam on Deck Excellot Offshore Miri."
+            },
+            {
+                "id": 179,
+                "image": "{{ url('build/img/project_img/VOClient/toyoeng.png') }}",
+                "name": "TOYO ENGINEERING & CONSTRUCTION (M) Sdn. Bhd.",
+                "year": "1998 - 1999",
+                "desc": "Provision of project inspector for FPG Oleochemical Plant Extension Project."
+            },
+            {
+                "id": 180,
+                "image": "{{ url('build/img/project_img/VOClient/dnv.png') }}",
+                "name": "DET NORSKE VERITAS AS Sdn. Bhd.",
+                "year": "1998",
+                "desc": "Coating Inspection for EPCC - MPP at Bredero Price Kuantan Port"
+            },
+            {
+                "id": 181,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "METAL PIPELINE ENDUR Sdn. Bhd.",
+                "year": "1998",
+                "desc": "Provision of Welding Inspector for Structural, JGC Pulau Seraya Project"
+            },
+            {
+                "id": 182,
+                "image": "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                "name": "KEJURUTERAAN KOTA AMAN Sdn. Bhd.",
+                "year": "1998",
+                "desc": "Provision of Ultrasonic Testing for Petronas Gas, PGU III Project Metering Station"
             }
         ], elementsPerSubArray);
 
@@ -895,7 +1455,317 @@
                 name: "Quest Integrity MYS Sdn. Bhd.",
                 year: "2017",
                 desc: "Fabrication of Pig Trap at Pasir Gudang"
+            },
+            {
+                id: 13,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Lloyds Register Technical Sdn. Bhd.",
+                year: "2015",
+                desc: "10\" Test Loop - Fabricate and run testinddg for TML"
+            },
+            {
+                id: 14,
+                image: "{{ url('build/img/project_img/VOClient/almhiro.png') }}",
+                name: "Alam Hidro (M) Sdn. Bhd.",
+                year: "2015",
+                desc: "Fabrication of underwater bypass spool for 4\" gas lift from BRB to BSA"
+            },
+            {
+                id: 15,
+                image: "{{ url('build/img/project_img/VOClient/ptsc.jpg') }}",
+                name: "Petrovietnam Technical Services Corporation (PTSC) Malaysia",
+                year: "2014 - 2015",
+                desc: "Rental for 6 months storage yard at Balok Kuantan cw relevant facilities & maintenance services"
+            },
+            {
+                id: 16,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Shapadu / Rekayasa",
+                year: "2015",
+                desc: "* Lube Blending Tank\n* Launcher Receiver"
+            },
+            {
+                id: 18,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "JGC Corp / Argonaut",
+                year: "2015",
+                desc: "Stabilizer Column - PT Polytama Propindo Indonesia"
+            },
+            {
+                id: 19,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Sallehuddin Power Station",
+                year: "2015",
+                desc: "Pressure Transmittal Vessel, Port Klang"
+            },
+            {
+                id: 20,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Petra Fabricators Sdn. Bhd.",
+                year: "2015",
+                desc: "Thinning & Monomer Tank – Cray Valley Project"
+            },
+            {
+                id: 21,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Petra Fabricators Sdn. Bhd.",
+                year: "2015",
+                desc: "Crude Oil Custody Transfer Metering Skid – Gaspian Sea FSO"
+            },
+            {
+                id: 22,
+                image: "{{ url('build/img/project_img/VOClient/jgc.png') }}",
+                name: "JGC Corp.",
+                year: "2015",
+                desc: "Gas Metering Skid – Thai Lube Oil Project"
+            },
+            {
+                id: 23,
+                image: "{{ url('build/img/project_img/VOClient/bwg.png') }}",
+                name: "Bestwide Engineering Sdn. Bhd.",
+                year: "2015",
+                desc: "Chemical Injection Skid – EPMI Bunga Seroja Platform"
+            },
+            {
+                id: 24,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "ROSEN Inspection Asia Pacific Sdn. Bhd.",
+                year: "2014",
+                desc: "Test Loop Assembly and Test Run Assistance"
+            },
+            {
+                id: 25,
+                image: "{{ url('build/img/project_img/VOClient/petronagasberhad.png') }}",
+                name: "Petronas Gas Berhad",
+                year: "2013",
+                desc: "Provision Pipe support Replacement At PGU Phase III at Regulator Metering Skids at PGM, Pasir Gudang, Johor"
+            },
+            {
+                id: 26,
+                image: "{{ url('build/img/project_img/VOClient/petpioneereng.png') }}",
+                name: "Pioneer Engineering Sdn. Bhd.",
+                year: "2011 - 2013",
+                desc: "CHESS – Blasting & Painting job via Rope Access"
+            },
+            {
+                id: 26,
+                image: "{{ url('build/img/project_img/VOClient/petronagasberhad.png') }}",
+                name: "Petronas Gas Berhad",
+                year: "2013",
+                desc: "Provision of Blasting & Painting at PGMS Metering Station"
+            },
+            {
+                id: 27,
+                image: "{{ url('build/img/project_img/VOClient/petronas_carigali_0.png') }}",
+                name: "Petronas Carigali Sdn. Bhd.",
+                year: "2012",
+                desc: "Provision Tilted Perform V3010/3080 Reinstatement Carigali - PMO"
+            },
+            {
+                id: 28,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Polyplastic Asia Pacific Sdn. Bhd. (EPCC: Oversea Technical Engineering & Construction Pte. Ltd.)",
+                year: "2011",
+                desc: "Fabrication and erection of 1 unit of Demin Water Storage Tank c/w Distribution Piping System at MP2 Project"
+            },
+            {
+                id: 29,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Kaneka Polymer Plastic (M) Sdn. Bhd. (EPCC: Mitsubishi Kokaki Kaisha Pte. Ltd.)",
+                year: "2011",
+                desc: "Fabrication and erection of 1 unit of Water Storage Tank at Kaneka MEP Project"
+            },
+            {
+                id: 29,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Titan Chemicals",
+                year: "2011",
+                desc: "* Cleaning Reactor Shell via Rope Access\n* 1 Unit of Binding SILO Repair using Rope Access"
+            },
+            {
+                id: 30,
+                image: "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                name: "FPSO Ventures Sdn. Bhd.",
+                year: "2011",
+                desc: "Provision of Manpower, Material, equipment, tools and consumables for heat Exchanger (E-1710 and E-17508) Cleaning Works onboard FPSO Bunga Kertas"
+            },
+            {
+                id: 29,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Titan Chemicals",
+                year: "2011",
+                desc: "Acid Pickling at Titan Chemicals Plant Pasir Gudang"
+            },
+            {
+                id: 30,
+                image: "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                name: "FPSO Ventures Sdn. Bhd.",
+                year: "2011",
+                desc: "Painting & Blasting via Rope Access on Mongkey Island at FPSO Bunga Kertas"
+            },
+            {
+                id: 31,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Sunpower Melaka Solar Manufacturing (M) Sdn. Bhd. (EPCC: PT Technic Engineering Sdn. Bhd.)",
+                year: "2010",
+                desc: "EPCC of Diesel Storage Tank c/w Distribution Piping Works"
+            },
+            {
+                id: 32,
+                image: "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                name: "FPSO Ventures Sdn. Bhd.",
+                year: "2010",
+                desc: "Provision of Manpower, Material, equipment, tools and consumables for heat Exchanger (E-1710 and E-17508) Cleaning Works onboard FPSO Bunga Kertas"
+            },
+            {
+                id: 33,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Kaneka Polymer Plastic (M) Sdn. Bhd. (EPCC: Mitsubishi Kokaki Kaisha Pte. Ltd.)",
+                year: "2010",
+                desc: "Fabrication and erection of 1 unit of Water Storage Tank at Kaneka MEP Project"
+            },
+            {
+                id: 34,
+                image: "{{ url('build/img/project_img/VOClient/petronas_carigali_0.png') }}",
+                name: "Petronas Carigali Sdn. Bhd.",
+                year: "2010",
+                desc: "Provision to supply manpower, material, equipment for to perform Cleaning on printed circuit Heat Exchanger, E2430"
+            },
+            {
+                id: 35,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Careion Technologist - Kerteh Terminal Sdn. Bhd.",
+                year: "2009",
+                desc: "AE Probe Installation for Sphere Tank using Rope Access at KTSB"
+            },
+            {
+                id: 36,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Sunpower Melaka Solar Manufacturing (M) Sdn. Bhd. (EPCC: PT Technic Engineering Sdn. Bhd.)",
+                year: "2009",
+                desc: "EPCC of Diesel Storage Tank c/w Distribution Piping Works"
+            },
+            {
+                id: 37,
+                image: "{{ url('build/img/project_img/VOClient/FPSO-Logo.png') }}",
+                name: "FPSO Ventures Sdn. Bhd.",
+                year: "2009",
+                desc: "Provision of Manpower, Material, equipment, tools and consumables for heat Exchanger (E-1710 and E-17508) Cleaning Works onboard FPSO Bunga Kertas"
+            },
+            {
+                id: 38,
+                image: "{{ url('build/img/project_img/VOClient/petronas_carigali_0.png') }}",
+                name: "Petronas Carigali Sdn. Bhd.",
+                year: "2009",
+                desc: "Provision of heat exchanger inspection and specialist services, Petronas Carigali Sdn. Bhd., Peninsular Malaysia Operations (PMO)"
+            },
+            {
+                id: 39,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Petronas Penapisan (Melaka) Sdn. Bhd. (EPCC: PT Technic Engineering Sdn. Bhd.)",
+                year: "2009",
+                desc: "Fabrication and erection of 7 units of Water Storage Tanks at MG3 Project c/w Tank Farm Interconnection Piping Works"
+            },
+            {
+                id: 41,
+                image: "{{ url('build/img/project_img/VOClient/logomakhostia.png') }}",
+                name: "Makhostia Utilities Sdn. Bhd.",
+                year: "2008",
+                desc: "Mechanical work for Gas District Cooling KLCC on Evaporator, Condenser, Intercooler & Lube oil cooler"
+            },
+            {
+                id: 42,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "Port Tanjung Langsat Sdn. Bhd. (EPCC: Saga Dialog Sdn. Bhd.)",
+                year: "2008",
+                desc: "Fabrication and erection of 2 units of Diesel Storage Tanks at Langsat Terminal One and Langsat CTF c/w Interconnecting Piping in Tank Farm at Tanjung Langsat Johor"
+            },
+            {
+                id: 43,
+                image: "{{ url('build/img/project_img/VOClient/CenservHD.png') }}",
+                name: "CENSERV Sdn. Bhd.",
+                year: "2008",
+                desc: "Fabrication of 6 units of Oil Cooler Heat Exchanger & 1 unit Titanium Bundle"
+            },
+            {
+                id: 44,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "EDARAN ASIA Ptd. Ltd.",
+                year: "2006",
+                desc: "Consultancy for Welding and Fabrication QMS for Structural and Pipeline Works - Batam Indonesia Project"
+            },
+            {
+                id: 45,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "POLYETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2005",
+                desc: "Installation of sleeves, support plate bars and flange. Bolts and nuts replacement for top nozzle of SILO PE-1-880B"
+            },
+            {
+                id: 44,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "EDARAN ASIA Ptd. Ltd.",
+                year: "2006",
+                desc: "Consultancy services for Quality Manual System – Process piping fabrication project compliance with API/ASME Code of Practices."
+            },
+            {
+                id: 46,
+                image: "{{ url('build/img/project_img/VOClient/tnec.png') }}",
+                name: "TNB ENGINEERING CORPORATION Sdn. Bhd.",
+                year: "2004",
+                desc: "Transfer of MPO at Prai Power Station – Fabrication of metering pump skid"
+            },
+            {
+                id: 47,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "ETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2004",
+                desc: "Fabrication and supply of bell mouth for cracking heater’s induced draft fan motor"
+            },
+            {
+                id: 48,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "ETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2004",
+                desc: "Fabrication and supply of bell mouth for cracking heater’s induced draft fan motor"
+            },
+            {
+                id: 49,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "ETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2003",
+                desc: "Supply of Burner modification kit including fittings and site installation"
+            },
+            {
+                id: 50,
+                image: "{{ url('build/img/project_img/VOClient/tnec.png') }}",
+                name: "TENAGA NASIONAL ENGINEERING & CONSTRUCTION (M) Sdn. Bhd.",
+                year: "2002",
+                desc: "EPCC Distillate Line from Marine Jetty to Tank Farm for TNB SJSI Power Plant Pasir Gudang"
+            },
+            {
+                id: 51,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "POLYETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2002",
+                desc: "Modifying broken tube, installation of sleeves and installation of support plate bars for SILO PE-1-880A"
+            },
+            {
+                id: 52,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "ETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2002",
+                desc: "Fabrication and site installation of 6-inch cracking heater’s decoking effluent line"
+            },
+            {
+                id: 50,
+                image: "{{ url('build/img/project_img/VOClient/tnec.png') }}",
+                name: "TENAGA NASIONAL ENGINEERING & CONSTRUCTION (M) Sdn. Bhd.",
+                year: "2002",
+                desc: "Quality Assurance and Control Project Development Package"
             }
+
+
         ], elementsPerSubArray);
 
         const dataRepair = listToMatrix([{
@@ -918,6 +1788,20 @@
                 name: "Repsol Oil & Gas Malaysia Ltd.",
                 year: "2017",
                 desc: "BRA Diesel Tank Cleaning and Fuel Reconditioning Services"
+            },
+            {
+                id: 4,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "M3nergy FPSO Perintis Sdn. Bhd.",
+                year: "2009",
+                desc: "BRA Diesel Tank Cleaning and Fuel Reconditioning Services"
+            },
+            {
+                id: 5,
+                image: "{{ url('build/img/project_img/VOClient/default_logo.png') }}",
+                name: "POLYETHYLENE MALAYSIA Sdn. Bhd.",
+                year: "2004",
+                desc: "Repair and fabrication of SILO 880A and 880B"
             }
         ], elementsPerSubArray);
 
@@ -931,7 +1815,7 @@
                 id: 2,
                 image: "{{ url('build/img/project_img/VOClient/DYNASEGMENT logo.png') }}",
                 name: "Dyna Segmen",
-                desc: "We successfully supplied craned to the Kazakhstan market in collaboration with Dyna Segmen. Our partnership ensured the seamless provision of high-quality industrial equipment and services, tailored to meet the specific needs of the region."
+                desc: "We successfully supplied cranes to the Kazakhstan market in collaboration with Dyna Segmen. Our partnership ensured the seamless provision of high-quality industrial equipment and services, tailored to meet the specific needs of the region."
             },
             {
                 id: 3,
@@ -942,7 +1826,7 @@
             {
                 id: 2,
                 image: "{{ url('build/img/project_img/VOClient/Emblem_of_Brunei.png') }}",
-                name: "Brunei Darussalam",
+                name: "BEDB Brunei Darussalam",
                 desc: "Exploring the potential of floating solar technology in Brunei Darussalam, paving the way for sustainable energy solutions."
             }
         ], elementsPerSubArray);
@@ -1028,7 +1912,9 @@
                 const imgElement = document.createElement('img');
                 imgElement.src = subItem.image;
                 imgElement.alt = subItem.name;
-                imgElement.style.width = '85%';
+                imgElement.style.maxHeight = '120px';
+                imgElement.style.maxWidth = '120px';
+                imgElement.style.backgroundColor = 'white';
                 circleDiv.appendChild(imgElement);
 
                 const contentDiv = document.createElement('div');
@@ -1037,7 +1923,7 @@
                 const nameH1 = document.createElement('h2');
                 nameH1.textContent = subItem.name;
                 nameH1.style.color = '#008080';
-                nameH1.style.marginBottom = '0px';
+                nameH1.style.marginTop = '5px';
                 nameH1.style.textAlign = 'center';
                 contentDiv.appendChild(nameH1);
 

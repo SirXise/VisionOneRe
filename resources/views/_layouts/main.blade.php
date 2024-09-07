@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title')</title>
+    <title>Vision One Sdn. Bhd. | @yield('title')</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('build/icon/Vision One Logo Icon.ico') }}">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="At Vision One Sdn. Bhd., we offer bespoke solutions, meticulously designed to address the intricate demands of EPCC contractors, offshore fabricators, and process package integrators." name="description">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
